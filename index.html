@@ -68,7 +68,7 @@
       padding: 10px;
       font-size: 16px;
       width: 300px; /* Aumenta el ancho de los campos */
-      margin: 10px;
+      margin: 10px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
       background-color: #004D92; /* Fondo azul */
@@ -85,6 +85,7 @@
       border-radius: 5px;
       margin: 15px 0;
       cursor: pointer;
+      width: 300px; /* Asegura que los botones tengan el mismo tamaño que los select */
     }
     .btn-solution {
       background-color: #0085D1; /* Azul */
@@ -155,8 +156,10 @@
       </select>
 
       <!-- Botones -->
-      <button type="button" class="btn-solution">Encuentra mi solución &rarr;</button>
-      <button type="button" class="btn-no-optimization">No optimice mi experiencia</button>
+      <div style="margin-top: 20px;">
+        <button type="button" class="btn-solution">Encuentra mi solución &rarr;</button>
+        <button type="button" class="btn-no-optimization">No optimice mi experiencia</button>
+      </div>
     </form>
   </section>
 
@@ -167,5 +170,3 @@
 
 </body>
 </html>
-
-
