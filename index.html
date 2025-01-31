@@ -55,6 +55,23 @@
       background-color: #333;
       color: white;
     }
+    .form-container {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .form-container label {
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .form-container select {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
@@ -75,6 +92,40 @@
   <section class="content">
     <h2>¿Por qué elegir AxentDev?</h2>
     <p>En AxentDev nos especializamos en crear aplicaciones innovadoras y de alta calidad que se adaptan a tus necesidades.</p>
+  </section>
+
+  <!-- Formulario con los campos desplegables -->
+  <section class="form-container">
+    <h2>Cuéntanos más sobre tu empresa</h2>
+    <form>
+      <!-- Campo "Yo trabajo en:" -->
+      <label for="company-size">Yo trabajo en:</label>
+      <select id="company-size" name="company-size">
+        <option value="">Selecciona el tamaño de compañía</option>
+        <option value="grande">Grande (Más de 5000 empleados)</option>
+        <option value="mediana-grande">Mediana - Grande (250 a 4999 empleados)</option>
+        <option value="mediana">Mediana (50 a 249 empleados)</option>
+        <option value="pequena">Pequeña (10 a 49 empleados)</option>
+        <option value="emergente">Emergente (1 a 9 empleados)</option>
+      </select>
+
+      <!-- Campo "Empresa en:" -->
+      <label for="industry">Empresa en:</label>
+      <select id="industry" name="industry">
+        <option value="">Selecciona tu industria</option>
+        <option value="educacion">Educación</option>
+        <option value="finanzas">Finanzas</option>
+        <option value="seguros">Seguros</option>
+        <option value="salud">Salud</option>
+        <option value="produccion">Producción</option>
+        <option value="medios-comunicacion">Medios de Comunicación</option>
+        <option value="ventas">Ventas/Comercio Online</option>
+        <option value="software">Software y Servicios Tecnológicos</option>
+        <option value="telecomunicaciones">Telecomunicaciones</option>
+        <option value="transporte">Transporte</option>
+        <option value="otro">Otro</option>
+      </select>
+    </form>
   </section>
 
   <!-- Footer Section -->
