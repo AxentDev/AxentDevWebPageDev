@@ -1,122 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AxentDev - Soluciones para tu empresa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .logo {
-            max-width: 200px;
-            display: block;
-            margin: 0 auto 20px;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        select {
-            width: calc(100% - 20px);
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            margin-bottom: 15px;
-            background-color: #007bff;
-            color: white;
-        }
-        .button-container {
-            margin-top: 20px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-        .primary-btn {
-            background-color: #007bff;
-            color: white;
-        }
-        .secondary-btn {
-            background-color: #ccc;
-            color: black;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AxentDev - Desarrollo de Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #004D92;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto; /* Esto centra la imagen */
+    }
+    section.hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #004D92, #0085D1);
+      color: white;
+    }
+    .btn-primary {
+      padding: 10px 20px;
+      background-color: #0085D1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      background-color: #005F8A;
+    }
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .content h2 {
+      font-size: 36px;
+      color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+    .form-container {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .form-container label {
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .form-container select {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px; /* Aumenta el ancho de los campos */
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #004D92; /* Fondo azul */
+      color: white; /* Texto blanco */
+    }
+    .form-container select option {
+      background-color: #004D92; /* Fondo azul para las opciones */
+      color: white; /* Texto blanco para las opciones */
+    }
+    .form-container button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      margin: 15px 0;
+      cursor: pointer;
+      width: 300px; /* Asegura que los botones tengan el mismo tamaño que los select */
+    }
+    .btn-solution {
+      background-color: #0085D1; /* Azul */
+      color: white;
+    }
+    .btn-solution:hover {
+      background-color: #005F8A;
+    }
+    .btn-no-optimization {
+      background-color: #ccc; /* Gris claro */
+      color: black;
+    }
+    .btn-no-optimization:hover {
+      background-color: #999;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <img src="images/ImageAxentDev.png" alt="Logo de AxentDev" class="logo">
-    <h1>Bienvenido a AxentDev</h1>
-    <p>Tu empresa de desarrollo de software.</p>
+  <!-- Header with Logo -->
+  <header>
+    <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
+  </header>
 
-    <label for="company-size">Yo trabajo en:</label>
-    <select id="company-size">
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Bienvenido a AxentDev</h1>
+    <p>Tu empresa de desarrollo de software, creando soluciones innovadoras.</p>
+    <button class="btn-primary">Contáctanos</button>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <h2>¿Por qué elegir AxentDev?</h2>
+    <p>En AxentDev nos especializamos en crear aplicaciones innovadoras y de alta calidad que se adaptan a tus necesidades.</p>
+  </section>
+
+  <!-- Formulario con los campos desplegables y botones -->
+  <section class="form-container">
+    <h2>Cuéntanos más sobre tu empresa</h2>
+    <form>
+      <!-- Campo "Yo trabajo en:" -->
+      <label for="company-size">Yo trabajo en:</label>
+      <select id="company-size" name="company-size">
         <option value="">Selecciona el tamaño de compañía</option>
         <option value="grande">Grande (Más de 5000 empleados)</option>
         <option value="mediana-grande">Mediana - Grande (250 a 4999 empleados)</option>
         <option value="mediana">Mediana (50 a 249 empleados)</option>
-        <option value="pequeña">Pequeña (10 a 49 empleados)</option>
+        <option value="pequena">Pequeña (10 a 49 empleados)</option>
         <option value="emergente">Emergente (1 a 9 empleados)</option>
-    </select>
+      </select>
 
-    <label for="industry">Empresa en:</label>
-    <select id="industry">
+      <!-- Campo "Empresa en:" -->
+      <label for="industry">Empresa en:</label>
+      <select id="industry" name="industry">
         <option value="">Selecciona tu industria</option>
         <option value="educacion">Educación</option>
         <option value="finanzas">Finanzas</option>
         <option value="seguros">Seguros</option>
         <option value="salud">Salud</option>
         <option value="produccion">Producción</option>
-        <option value="medios">Medios de Comunicación</option>
+        <option value="medios-comunicacion">Medios de Comunicación</option>
         <option value="ventas">Ventas/Comercio Online</option>
         <option value="software">Software y Servicios Tecnológicos</option>
         <option value="telecomunicaciones">Telecomunicaciones</option>
         <option value="transporte">Transporte</option>
         <option value="otro">Otro</option>
-    </select>
+      </select>
 
-    <div class="button-container">
-        <button class="primary-btn" onclick="redirectUser()">Encuentra mi solución →</button>
-        <button class="secondary-btn">No optimice mi experiencia</button>
-    </div>
-</div>
+      <!-- Botones -->
+      <div style="margin-top: 20px;">
+        <button type="button" class="btn-solution">Encuentra mi solución &rarr;</button>
+        <button type="button" class="btn-no-optimization">No optimice mi experiencia</button>
+      </div>
+    </form>
+  </section>
 
-<script>
-    function redirectUser() {
-        var companySize = document.getElementById("company-size").value;
-        var industry = document.getElementById("industry").value;
-
-        if (companySize === "grande" && industry === "educacion") {
-            window.location.href = "educaciongrande.html";
-        } else {
-            alert("No hay una solución específica para esta combinación todavía.");
-        }
-    }
-</script>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
