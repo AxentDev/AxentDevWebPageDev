@@ -17,12 +17,19 @@
             margin: 50px auto;
             background: white;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .logo {
             max-width: 200px;
             margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
         }
         select {
             width: 100%;
@@ -31,26 +38,24 @@
             font-size: 16px;
             border-radius: 5px;
             border: 1px solid #ccc;
-            background-color: #3d8bde;
-            color: white;
         }
-        select option {
-            background-color: white;
-            color: black;
+        .button-container {
+            margin-top: 20px;
         }
-        .button {
-            display: block;
+        button {
             width: 100%;
-            padding: 12px;
+            padding: 10px;
             font-size: 16px;
-            color: white;
-            background-color: #3d8bde;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
-        .button.secondary {
+        .primary-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        .secondary-btn {
             background-color: #ccc;
             color: black;
         }
@@ -58,53 +63,55 @@
 </head>
 <body>
 
-    <div class="container">
-        <img src="images/ImageAxentDev.png" alt="Logo de AxentDev" class="logo">
-        <h1>Bienvenido a AxentDev</h1>
-        <p>Tu empresa de desarrollo de software.</p>
+<div class="container">
+    <img src="images/ImageAxentDev.png" alt="Logo de AxentDev" class="logo">
+    <h1>Bienvenido a AxentDev</h1>
+    <p>Tu empresa de desarrollo de software.</p>
 
-        <label for="company-size">Yo trabajo en:</label>
-        <select id="company-size">
-            <option value="">Selecciona el tamaño de compañía</option>
-            <option value="Grande">Grande (Más de 5000 empleados)</option>
-            <option value="Mediana-Grande">Mediana - Grande (250 a 4999 empleados)</option>
-            <option value="Mediana">Mediana (50 a 249 empleados)</option>
-            <option value="Pequeña">Pequeña (10 a 49 empleados)</option>
-            <option value="Emergente">Emergente (1 a 9 empleados)</option>
-        </select>
+    <label for="company-size">Yo trabajo en:</label>
+    <select id="company-size">
+        <option value="">Selecciona el tamaño de compañía</option>
+        <option value="grande">Grande (Más de 5000 empleados)</option>
+        <option value="mediana-grande">Mediana - Grande (250 a 4999 empleados)</option>
+        <option value="mediana">Mediana (50 a 249 empleados)</option>
+        <option value="pequeña">Pequeña (10 a 49 empleados)</option>
+        <option value="emergente">Emergente (1 a 9 empleados)</option>
+    </select>
 
-        <label for="industry">Empresa en:</label>
-        <select id="industry">
-            <option value="">Selecciona tu industria</option>
-            <option value="Educación">Educación</option>
-            <option value="Finanzas">Finanzas</option>
-            <option value="Seguros">Seguros</option>
-            <option value="Salud">Salud</option>
-            <option value="Producción">Producción</option>
-            <option value="Medios de Comunicación">Medios de Comunicación</option>
-            <option value="Ventas/Comercio Online">Ventas/Comercio Online</option>
-            <option value="Software y Servicios Tecnológicos">Software y Servicios Tecnológicos</option>
-            <option value="Telecomunicaciones">Telecomunicaciones</option>
-            <option value="Transporte">Transporte</option>
-            <option value="Otro">Otro</option>
-        </select>
+    <label for="industry">Empresa en:</label>
+    <select id="industry">
+        <option value="">Selecciona tu industria</option>
+        <option value="educacion">Educación</option>
+        <option value="finanzas">Finanzas</option>
+        <option value="seguros">Seguros</option>
+        <option value="salud">Salud</option>
+        <option value="produccion">Producción</option>
+        <option value="medios">Medios de Comunicación</option>
+        <option value="ventas">Ventas/Comercio Online</option>
+        <option value="software">Software y Servicios Tecnológicos</option>
+        <option value="telecomunicaciones">Telecomunicaciones</option>
+        <option value="transporte">Transporte</option>
+        <option value="otro">Otro</option>
+    </select>
 
-        <button class="button" onclick="redirectToSolution()">Encuentra mi solución -></button>
-        <button class="button secondary">No optimice mi experiencia</button>
+    <div class="button-container">
+        <button class="primary-btn" onclick="redirectUser()">Encuentra mi solución →</button>
+        <button class="secondary-btn">No optimice mi experiencia</button>
     </div>
+</div>
 
-    <script>
-        function redirectToSolution() {
-            var companySize = document.getElementById('company-size').value;
-            var industry = document.getElementById('industry').value;
+<script>
+    function redirectUser() {
+        var companySize = document.getElementById("company-size").value;
+        var industry = document.getElementById("industry").value;
 
-            if (companySize === "Grande" && industry === "Educación") {
-                window.location.href = "educaciongrande.html";
-            } else {
-                alert("Por favor, selecciona las opciones correctas.");
-            }
+        if (companySize === "grande" && industry === "educacion") {
+            window.location.href = "educaciongrande.html";
+        } else {
+            alert("No hay una solución específica para esta combinación todavía.");
         }
-    </script>
+    }
+</script>
 
 </body>
 </html>
