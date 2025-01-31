@@ -78,6 +78,28 @@
       background-color: #004D92; /* Fondo azul para las opciones */
       color: white; /* Texto blanco para las opciones */
     }
+    .form-container button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    .btn-solution {
+      background-color: #0085D1; /* Azul */
+      color: white;
+    }
+    .btn-solution:hover {
+      background-color: #005F8A;
+    }
+    .btn-no-optimization {
+      background-color: #ccc; /* Gris claro */
+      color: black;
+    }
+    .btn-no-optimization:hover {
+      background-color: #999;
+    }
   </style>
 </head>
 <body>
@@ -100,7 +122,7 @@
     <p>En AxentDev nos especializamos en crear aplicaciones innovadoras y de alta calidad que se adaptan a tus necesidades.</p>
   </section>
 
-  <!-- Formulario con los campos desplegables -->
+  <!-- Formulario con los campos desplegables y botones -->
   <section class="form-container">
     <h2>Cuéntanos más sobre tu empresa</h2>
     <form>
@@ -131,6 +153,10 @@
         <option value="transporte">Transporte</option>
         <option value="otro">Otro</option>
       </select>
+
+      <!-- Botones -->
+      <button type="button" class="btn-solution">Encuentra mi solución &rarr;</button>
+      <button type="button" class="btn-no-optimization">No optimice mi experiencia</button>
     </form>
   </section>
 
