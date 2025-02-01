@@ -249,12 +249,16 @@
     <div class="form-content">
       <h2>¿Te interesa nuestro software?</h2>
       <form>
-        <input type="email" placeholder="Ingresa tu correo" required>
+        <label for="email">Ingresa tu correo electrónico para recibir más información:</label>
+        <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+        <div class="checkbox-container">
+          <input type="checkbox" id="agreement" name="agreement" required>
+          <label for="agreement">Acepto los términos y condiciones.</label>
+        </div>
         <button type="submit">Solicitar más información</button>
       </form>
     </div>
   </section>
-
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
   </footer>
