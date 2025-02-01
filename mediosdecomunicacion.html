@@ -106,24 +106,6 @@
       background-color: #4C5C6D;
     }
 
-    .form-content a {
-      display: inline-block;
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      text-align: center;
-      text-decoration: none;
-      background-color: #2D3E50;
-      color: white;
-      border-radius: 5px;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-
-    .form-content a:hover {
-      background-color: #4C5C6D;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -132,7 +114,8 @@
     }
 
     .justified-text {
-      margin-bottom: 10px;
+      text-align: justify;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -169,29 +152,29 @@
   </section>
 
   <section class="form-container">
-    <div class="form-content">
-      <h2>Ingresa Tu Correo Electrónico</h2>
-      <form action="#" method="POST">
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-
-        <div class="checkbox-container">
-          <input type="checkbox" id="accept" name="accept">
-        </div>
-        <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
-
-        <div class="checkbox-container">
-          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
-        </div>
-
-        <div class="btn-container">
-          <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
-
-          <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
-        </div>
-      </form>
-    </div>
+      <div class="form-content">
+        <h2>Ingresa Tu Correo Electrónico</h2>
+        <form action="#" method="POST">
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+  
+          <div class="checkbox-container">
+            <input type="checkbox" id="accept" name="accept">
+          </div>
+          <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+  
+          <div class="checkbox-container">
+            <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con el <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
+          </div>
+  
+          <div class="btn-container">
+            <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
+  
+            <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
+          </div>
+        </form>
+      </div>
   </section>
- 
+
   <footer>
     <p>&copy; 2025 MediaTech. Todos los derechos reservados.</p>
   </footer>
