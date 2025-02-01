@@ -75,15 +75,26 @@
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centra todo el contenido dentro del formulario */
     }
+    
+    /* Centrar el título */
+    .form-container h2 {
+      text-align: center; /* Centra el título */
+      width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    }
+    
+    /* Ajustar el campo de correo electrónico */
     .form-container input[type="email"] {
-      width: 90%;
+      width: 90%; /* Ajustar el ancho del campo */
       padding: 12px;
       margin: 10px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
       font-size: 16px;
-    }
+    }    
     .form-container label {
       font-size: 14px;
       color: #333;
