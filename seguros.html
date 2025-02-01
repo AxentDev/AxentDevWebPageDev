@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxentSeguros - Soluciones de Seguros Personalizados</title>
+  <title>AxentDev - Software De Soporte De Seguros </title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
@@ -177,56 +177,92 @@
       color: white;
     }
 
+    /* Estilos para las fichas en fila */
+    .features-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .feature-ficha {
+      background-color: #004D92;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-ficha h3 {
+      font-size: 24px;
+    }
+
+    .feature-ficha p {
+      font-size: 16px;
+    }
+
+    /* Espaciado extra entre las fichas y el formulario */
+    .form-container {
+      margin-top: 80px; /* Ajuste el margen superior */
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <img src="images/ImageAxentSeguros.png" alt="Logo de AxentSeguros">
+    <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
   </header>
 
   <section class="hero">
-    <h1>Protección y Confianza para Tu Futuro</h1>
-    <p>Ofrecemos seguros personalizados para tu tranquilidad.</p>
+    <h1>Software Innovador para la Industria de Seguros</h1>
+    <p>Soluciones tecnológicas personalizadas para compañías aseguradoras.</p>
   </section>
 
   <section class="content">
-    <h2>¿Por qué elegir nuestros seguros?</h2>
-    <p>Nos especializamos en ofrecer seguros adaptados a las necesidades de cada cliente, con la confianza que necesitas.</p>
+    <h2 style="text-align: center;">¿Por qué elegir nuestro software para la industria de seguros?</h2>
+    <p style="text-align: center;">En AxentDev, ofrecemos soluciones de software que mejoran la eficiencia, seguridad y rentabilidad de las empresas aseguradoras.</p>
   </section>
 
-  <section class="feature">
-    <div>
-      <h3>Seguridad</h3>
-      <p>Protegemos tu futuro con coberturas de alta calidad para tu bienestar.</p>
-    </div>
-    <div>
-      <h3>Flexibilidad</h3>
-      <p>Planes de seguros flexibles para cubrir tus necesidades específicas.</p>
-    </div>
-    <div>
-      <h3>Confianza</h3>
-      <p>Te brindamos la tranquilidad de estar respaldado por una empresa de confianza.</p>
-    </div>
+  <!-- Fichas de Seguridad, Optimización, Escalabilidad -->
+  <section class="features">
+   <h2>Características de nuestro software para Seguros</h2>
+   <div class="feature-list">
+     <div class="feature">
+       <h3>Automatización de Procesos</h3>
+       <p>Automatizamos la gestión de pólizas y reclamos para optimizar el tiempo y reducir errores.</p>
+     </div>
+     <div class="feature">
+       <h3>Integración con Sistemas Externos</h3>
+       <p>Conectamos tu software con plataformas externas para un intercambio de datos eficiente.</p>
+     </div>
+     <div class="feature">
+       <h3>Seguridad de Datos</h3>
+       <p>Garantizamos la protección de los datos de tus asegurados mediante tecnologías de seguridad avanzadas.</p>
+     </div>
+   </div>
   </section>
 
   <section class="form-container">
     <div class="form-content">
-      <h2>Solicita más Información</h2>
+      <h2>Ingresa Tu Correo Electrónico</h2>
       <form action="#" method="POST">
         <input type="email" name="email" placeholder="Correo electrónico" required>
 
         <div class="checkbox-container">
           <input type="checkbox" id="accept" name="accept">
         </div>
-        <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentSeguros se ponga en contacto conmigo para enviarme comunicaciones relacionadas con productos, servicios y eventos de AxentSeguros. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+        <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
 
         <div class="checkbox-container">
-          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentSeguros recopile, procese y almacene mi información de acuerdo con la <a href="https://axentseguro.com/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentSeguros</a>.</label>
+          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
         </div>
 
         <div class="btn-container">
-          <button type="submit" class="btn-primary">¡Solicita Tu Seguro!</button>
+          <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
 
           <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
         </div>
@@ -235,14 +271,14 @@
   </section>
 
   <section class="social-icons">
-    <a href="https://www.instagram.com/axentseguro/" target="_blank" class="fab fa-instagram"></a>
-    <a href="https://x.com/AxentSeguros" target="_blank" class="fab fa-twitter"></a>
-    <a href="https://www.linkedin.com/in/axentseguro/" target="_blank" class="fab fa-linkedin"></a>
+    <a href="https://www.instagram.com/axentdev/" target="_blank" class="fab fa-instagram"></a>
+    <a href="https://x.com/AxentDev" target="_blank" class="fab fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/axentdev-de-mendoza-79790b34a/" target="_blank" class="fab fa-linkedin"></a>
     <a href="https://wa.me/573112687118" target="_blank" class="fab fa-whatsapp"></a>
   </section>
 
   <footer>
-    <p>&copy; 2025 AxentSeguros. Todos los derechos reservados.</p>
+    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
   </footer>
 
 </body>
