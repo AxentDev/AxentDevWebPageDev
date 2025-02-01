@@ -185,6 +185,11 @@
           <label for="accept">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
         </div>
   
+        <!-- Texto adicional (sin el segundo checkbox) -->
+        <div class="checkbox-container">
+          <label for="privacy-consent">Al enviar mis datos personales, doy mi consentimiento para que Zendesk recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
+        </div>
+  
         <!-- Botón -->
         <button type="submit" class="btn-primary">Haz una Prueba</button>
       </form>
@@ -194,7 +199,7 @@
   <style>
     .checkbox-container {
       display: flex;
-      justify-content: center; /* Centra el contenido (checkbox + texto) */
+      justify-content: center; /* Centra el contenido */
       align-items: center;
       margin: 10px 0;
     }
@@ -205,7 +210,7 @@
   
     .checkbox-container label {
       max-width: 80%;
-      text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+      text-align: left; /* Alinea el texto a la izquierda */
     }
   </style>
 
