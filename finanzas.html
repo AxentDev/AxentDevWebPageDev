@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AxentDev - Software de Soporte Financiero</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Incluye Font Awesome para los iconos de redes sociales -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
@@ -156,7 +155,6 @@
       height: 23px;
     }
 
-    /* Estilo para los iconos de redes sociales */
     .social-icons {
       display: flex;
       justify-content: center;
@@ -179,17 +177,25 @@
       color: white;
     }
 
-    /* Asegurar que el título esté centrado */
-    section.content {
-      padding: 40px 20px;
+    /* Estilos para las fichas */
+    .feature-ficha {
+      display: inline-block;
+      background-color: #004D92;
+      color: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      width: 250px;
       text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    section.content h2 {
-      font-size: 36px;
-      color: #333;
-      text-align: center;
-      margin: 0;
+    .feature-ficha h3 {
+      font-size: 24px;
+    }
+
+    .feature-ficha p {
+      font-size: 16px;
     }
 
   </style>
@@ -206,25 +212,24 @@
   </section>
 
   <section class="content">
-    <h2>¿Por qué elegir nuestro soporte financiero?</h2>
-    <p>Nos especializamos en ofrecer soporte eficaz y soluciones tecnológicas a empresas del sector financiero.</p>
+    <h2 style="text-align: center;">¿Por qué elegir nuestro soporte financiero?</h2>
+    <p style="text-align: center;">Nos especializamos en ofrecer soporte eficaz y soluciones tecnológicas a empresas del sector financiero.</p>
   </section>
 
   <section class="feature">
-    <div>
+    <div class="feature-ficha">
       <h3>Seguridad</h3>
       <p>Proteger los datos de tus clientes es nuestra prioridad. Implementamos sistemas de seguridad avanzados.</p>
     </div>
-    <div>
+    <div class="feature-ficha">
       <h3>Optimización</h3>
       <p>Mejoramos la eficiencia de tus procesos financieros, reduciendo tiempos y costos.</p>
     </div>
-    <div>
+    <div class="feature-ficha">
       <h3>Escalabilidad</h3>
       <p>Ofrecemos soluciones que crecen contigo, adaptándose a las necesidades cambiantes de tu empresa.</p>
     </div>
   </section>
-
 
   <section class="form-container">
     <div class="form-content">
