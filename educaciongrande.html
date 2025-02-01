@@ -172,21 +172,22 @@
     </div>
   </section>
 
- <!-- Formulario para el correo electrónico y la casilla de aceptación -->
+  <!-- Formulario para el correo electrónico y la casilla de aceptación -->
   <section class="form-container">
     <div class="form-content">
       <h2>Ingresa Tu Correo Electrónico</h2>
       <form action="#" method="POST">
         <input type="email" name="email" placeholder="Correo electrónico" required>
   
-        <!-- Primer texto con checkbox -->
+        <!-- Primer texto con checkbox centrado -->
         <div class="checkbox-container">
           <input type="checkbox" id="accept" name="accept">
           <label for="accept">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
         </div>
   
-        <!-- Nuevo texto con interlineado entre los dos textos -->
+        <!-- Segundo texto con checkbox centrado -->
         <div class="checkbox-container">
+          <input type="checkbox" id="privacy-consent" name="privacy-consent">
           <label for="privacy-consent">Al enviar mis datos personales, doy mi consentimiento para que Zendesk recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
         </div>
   
@@ -199,18 +200,18 @@
   <style>
     .checkbox-container {
       display: flex;
+      justify-content: center; /* Centra el contenido (checkbox + texto) */
       align-items: center;
-      justify-content: center;
       margin: 10px 0;
     }
   
     .checkbox-container input {
-      margin-right: 10px;
+      margin-right: 10px; /* Espacio entre el checkbox y el texto */
     }
   
     .checkbox-container label {
       max-width: 80%;
-      text-align: center;
+      text-align: left; /* Asegura que el texto esté alineado a la izquierda */
     }
   </style>
 
