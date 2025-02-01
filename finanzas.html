@@ -177,13 +177,19 @@
       color: white;
     }
 
-    /* Estilos para las fichas */
+    /* Estilos para las fichas en fila */
+    .features-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
     .feature-ficha {
-      display: inline-block;
       background-color: #004D92;
       color: white;
       padding: 20px;
-      margin: 20px;
       border-radius: 10px;
       width: 250px;
       text-align: center;
@@ -216,7 +222,8 @@
     <p style="text-align: center;">Nos especializamos en ofrecer soporte eficaz y soluciones tecnológicas a empresas del sector financiero.</p>
   </section>
 
-  <section class="feature">
+  <!-- Fichas de Seguridad, Optimización, Escalabilidad -->
+  <section class="features-container">
     <div class="feature-ficha">
       <h3>Seguridad</h3>
       <p>Proteger los datos de tus clientes es nuestra prioridad. Implementamos sistemas de seguridad avanzados.</p>
