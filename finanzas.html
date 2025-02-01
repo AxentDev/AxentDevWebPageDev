@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxentDev - Soporte Financiero</title>
+  <title>AxentDev - Software de Soporte para Educación</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Incluye Font Awesome para los iconos de redes sociales -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
@@ -16,85 +17,133 @@
       flex-direction: column;
       min-height: 100vh;
     }
+
     header {
       background-color: #004D92;
       color: white;
       padding: 20px 0;
       text-align: center;
     }
+
     header img {
       max-width: 200px;
       display: block;
       margin: 0 auto;
     }
+
     section.hero {
       text-align: center;
       padding: 50px 20px;
       background: linear-gradient(to right, #004D92, #0085D1);
       color: white;
     }
-    .btn-primary {
-      padding: 10px 20px;
-      background-color: #0085D1;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    .btn-primary:hover {
-      background-color: #005F8A;
-    }
-    .content {
-      text-align: center;
+
+    section.features, section.benefits {
       padding: 40px 20px;
+      text-align: center;
     }
-    .content h2 {
+
+    section.features h2, section.benefits h2 {
       font-size: 36px;
       color: #333;
     }
-    footer {
-      text-align: center;
+
+    .feature-list, .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .feature, .benefit {
+      background-color: #004D92;
       padding: 20px;
-      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      margin: 10px;
       color: white;
     }
+
     .form-container {
-      margin-top: 40px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: auto;
+    }
+
+    .form-content {
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-content h2 {
       text-align: center;
     }
-    .form-container label {
-      font-size: 18px;
-      margin-bottom: 10px;
-      display: block;
-    }
-    .form-container input[type="email"], .form-container button, .form-container select {
-      padding: 12px;
-      font-size: 16px;
+
+    .form-content input[type="email"], .form-content button {
       width: 100%;
+      padding: 12px;
       margin: 10px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
+      font-size: 16px;
       box-sizing: border-box;
     }
-    .form-container select {
+
+    .form-content button {
       background-color: #004D92;
       color: white;
-    }
-    .form-container button {
-      background-color: #0085D1;
-      color: white;
       cursor: pointer;
+      font-size: 16px;
     }
-    .form-container button:hover {
-      background-color: #005F8A;
+
+    .form-content button:hover {
+      background-color: #0070c0;
     }
+
     .checkbox-container {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 10px;
     }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn-primary, .btn-primary-link {
+      width: calc(100% - 24px);
+      padding: 12px;
+      background-color: #004D92;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 10px 0;
+      height: 48px;
+    }
+
+    .btn-primary:hover, .btn-primary-link:hover {
+      background-color: #0070c0;
+    }
+
     .justified-text {
       text-align: justify;
       font-size: 14px;
@@ -102,21 +151,34 @@
       display: block;
       margin-top: 10px;
     }
-    .btn-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
+    .btn-primary-link {
+      height: 23px;
     }
+
+    /* Estilo para los iconos de redes sociales */
     .social-icons {
-      text-align: center;
-      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
     }
+
     .social-icons a {
-      font-size: 36px;
+      font-size: 24px;
       color: #004D92;
-      margin: 0 15px;
       text-decoration: none;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid #004D92;
     }
+
+    .social-icons a:hover {
+      background-color: #004D92;
+      color: white;
+    }
+
   </style>
 </head>
 <body>
@@ -126,12 +188,44 @@
   </header>
 
   <section class="hero">
-    <h1>Soporte Financiero</h1>
-    <p>Optimiza tus procesos financieros con nuestra solución innovadora.</p>
+    <h1>Software de Soporte para Educación</h1>
+    <p>Optimiza tu servicio de soporte educativo con nuestra solución de software innovadora.</p>
   </section>
 
-  <section class="content">
-    <h2>¿Necesitas ayuda con tu gestión financiera?</h2>
+  <section class="features">
+    <h2>Características Principales</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Soporte Multicanal</h3>
+        <p>Ofrece soporte a través de varios canales como correo, chat en vivo y redes sociales.</p>
+      </div>
+      <div class="feature">
+        <h3>Gestión de Tickets</h3>
+        <p>Organiza y resuelve tickets de soporte de manera eficiente para mejorar la experiencia del usuario.</p>
+      </div>
+      <div class="feature">
+        <h3>Automatización</h3>
+        <p>Automatiza tareas repetitivas y proporciona respuestas instantáneas con bots inteligentes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>Beneficios del Software</h2>
+    <div class="benefit-list">
+      <div class="benefit">
+        <h3>Mejora la Eficiencia</h3>
+        <p>Reduce los tiempos de respuesta y mejora la eficiencia del equipo de soporte.</p>
+      </div>
+      <div class="benefit">
+        <h3>Aumenta la Satisfacción</h3>
+        <p>Brinda una experiencia de soporte más fluida y satisfactoria para los estudiantes.</p>
+      </div>
+      <div class="benefit">
+        <h3>Escalabilidad</h3>
+        <p>Escala tu sistema de soporte a medida que tu institución crece.</p>
+      </div>
+    </div>
   </section>
 
   <section class="form-container">
@@ -142,15 +236,17 @@
 
         <div class="checkbox-container">
           <input type="checkbox" id="accept" name="accept">
-          <label for="accept" class="justified-text">Al marcar esta casilla, acepto recibir comunicaciones relacionadas con productos, servicios y eventos financieros de AxentDev. Puedo cancelar la suscripción en cualquier momento.</label>
         </div>
+        <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
 
         <div class="checkbox-container">
-          <label for="privacy-consent" class="justified-text">Al enviar mis datos, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información conforme a la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Política de Privacidad</a>.</label>
+          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
         </div>
 
         <div class="btn-container">
-          <button type="submit" class="btn-primary">¡Solicitar Información!</button>
+          <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
+
+          <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
         </div>
       </form>
     </div>
