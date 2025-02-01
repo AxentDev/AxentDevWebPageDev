@@ -54,12 +54,13 @@
     }
 
     .feature, .benefit {
-      background-color: white;
+      background-color: #004D92; /* Color azul para las características */
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       width: 250px;
       margin: 10px;
+      color: white; /* Asegura que el texto dentro de estas características sea blanco */
     }
 
     /* Formulario */
@@ -109,44 +110,33 @@
       margin-top: 10px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       text-align: justify;
-      width: 100%; /* Asegura que el contenedor ocupe el 100% de ancho */
-      background-color: #3498db; /* Fondo azul */
-      color: white; /* Color del texto */
-      padding: 10px; /* Relleno dentro del cuadro */
-      border-radius: 5px; /* Bordes redondeados */
     }
 
-    .checkbox-container label {
-      text-align: justify;
-      word-wrap: break-word;
-      margin: 0;
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
     }
 
+    /* Estilo para los botones */
     .btn-primary {
       display: block;
       width: 100%;
       margin-top: 20px;
-    }
-
-    /* Estilo adicional para botones */
-    .btn-secondary {
-      display: inline-block;
-      width: auto;
-      padding: 10px 20px;
-      background-color: #3498db;
+      padding: 12px;
+      background-color: #004D92;
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
       text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-    .btn-secondary:hover {
+    .btn-primary:hover {
       background-color: #0070c0;
     }
-
   </style>
 </head>
 <body>
@@ -206,27 +196,27 @@
       <h2>Ingresa Tu Correo Electrónico</h2>
       <form action="#" method="POST">
         <input type="email" name="email" placeholder="Correo electrónico" required>
-  
+
         <!-- Primer texto con checkbox centrado -->
         <div class="checkbox-container">
           <input type="checkbox" id="accept" name="accept">
           <label for="accept">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
         </div>
-  
-        <!-- Texto adicional (sin el segundo checkbox) -->
+
+        <!-- Texto adicional -->
         <div class="checkbox-container">
           <label for="privacy-consent">Al enviar mis datos personales, doy mi consentimiento para que Zendesk recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
         </div>
-  
+
         <!-- Botón -->
         <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
 
         <!-- Botón para volver a la página inicial -->
-        <a href="index.html" class="btn-secondary">Volver a la Página Inicial</a>
+        <a href="index.html" class="btn-primary">Volver a la Página Inicial</a>
       </form>
     </div>
   </section>
-
+  
   <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
