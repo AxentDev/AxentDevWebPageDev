@@ -12,6 +12,9 @@
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background-color: #004D92;
@@ -65,42 +68,44 @@
       margin-bottom: 10px;
       display: block;
     }
-    .form-container select {
-      padding: 10px;
+    .form-container input[type="email"], .form-container button, .form-container select {
+      padding: 12px;
       font-size: 16px;
-      width: 300px;
+      width: 100%;
       margin: 10px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
-      background-color: #004D92;
-      color: white;
+      box-sizing: border-box;
     }
-    .form-container select option {
+    .form-container select {
       background-color: #004D92;
       color: white;
     }
     .form-container button {
-      padding: 12px 25px;
-      font-size: 18px;
-      border: none;
-      border-radius: 5px;
-      margin: 15px 0;
-      cursor: pointer;
-      width: 300px;
-    }
-    .btn-solution {
       background-color: #0085D1;
       color: white;
+      cursor: pointer;
     }
-    .btn-solution:hover {
+    .form-container button:hover {
       background-color: #005F8A;
     }
-    .btn-no-optimization {
-      background-color: #ccc;
-      color: black;
+    .checkbox-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
     }
-    .btn-no-optimization:hover {
-      background-color: #999;
+    .justified-text {
+      text-align: justify;
+      font-size: 14px;
+      color: #333;
+      display: block;
+      margin-top: 10px;
+    }
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .social-icons {
       text-align: center;
@@ -112,22 +117,6 @@
       margin: 0 15px;
       text-decoration: none;
     }
-    .social-icons a:hover {
-      color: #0085D1;
-    }
-    .feature {
-      display: flex;
-      justify-content: space-around;
-      margin: 40px 0;
-    }
-    .feature div {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 20px;
-      width: 25%;
-      text-align: center;
-      border-radius: 8px;
-    }
   </style>
 </head>
 <body>
@@ -137,30 +126,14 @@
   </header>
 
   <section class="hero">
-    <h1>Soporte Financiero Innovador</h1>
-    <p>Soluciones personalizadas para empresas del sector financiero.</p>
-    <button class="btn-primary">Contáctanos</button>
+    <h1>Soporte Financiero</h1>
+    <p>Optimiza tus procesos financieros con nuestra solución innovadora.</p>
   </section>
 
   <section class="content">
-    <h2>¿Por qué elegir nuestro soporte financiero?</h2>
-    <p>Nos especializamos en ofrecer soporte eficaz y soluciones tecnológicas a empresas del sector financiero.</p>
+    <h2>¿Necesitas ayuda con tu gestión financiera?</h2>
   </section>
 
-  <section class="feature">
-    <div>
-      <h3>Seguridad</h3>
-      <p>Proteger los datos de tus clientes es nuestra prioridad. Implementamos sistemas de seguridad avanzados.</p>
-    </div>
-    <div>
-      <h3>Optimización</h3>
-      <p>Mejoramos la eficiencia de tus procesos financieros, reduciendo tiempos y costos.</p>
-    </div>
-    <div>
-      <h3>Escalabilidad</h3>
-      <p>Ofrecemos soluciones que crecen contigo, adaptándose a las necesidades cambiantes de tu empresa.</p>
-    </div>
-  </section>
   <section class="form-container">
     <div class="form-content">
       <h2>Ingresa Tu Correo Electrónico</h2>
@@ -169,25 +142,19 @@
 
         <div class="checkbox-container">
           <input type="checkbox" id="accept" name="accept">
+          <label for="accept" class="justified-text">Al marcar esta casilla, acepto recibir comunicaciones relacionadas con productos, servicios y eventos financieros de AxentDev. Puedo cancelar la suscripción en cualquier momento.</label>
         </div>
-        <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
 
         <div class="checkbox-container">
-          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
+          <label for="privacy-consent" class="justified-text">Al enviar mis datos, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información conforme a la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Política de Privacidad</a>.</label>
         </div>
 
         <div class="btn-container">
-          <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
-
-          <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
+          <button type="submit" class="btn-primary">¡Solicitar Información!</button>
         </div>
       </form>
     </div>
   </section>
-  
-  <footer>
-    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
-  </footer>
 
   <section class="social-icons">
     <a href="https://www.instagram.com/axentdev/" target="_blank" class="fab fa-instagram"></a>
@@ -196,23 +163,9 @@
     <a href="https://wa.me/573112687118" target="_blank" class="fab fa-whatsapp"></a>
   </section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("find-solution").addEventListener("click", function () {
-        var companySize = document.getElementById("company-size").value;
-        var industry = document.getElementById("industry").value;
-
-        if (companySize && industry === "finanzas") {
-          window.location.href = "finanzas.html";
-        }
-      });
-
-      document.getElementById("back-to-home-btn").addEventListener("click", function () {
-        window.location.href = "index.html";
-      });
-    });
-  </script>
+  <footer>
+    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
-
