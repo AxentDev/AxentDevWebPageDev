@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaTech - Software para Medios de Comunicación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #2D3E50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    section.hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #2D3E50, #4C5C6D);
+      color: white;
+    }
+
+    section.features, section.benefits {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section.features h2, section.benefits h2 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .feature-list, .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .feature, .benefit {
+      background-color: #2D3E50;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      margin: 10px;
+      color: white;
+    }
+
+    .form-container {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: auto;
+    }
+
+    .form-content {
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-content h2 {
+      text-align: center;
+    }
+
+    .form-content input[type="email"], .form-content button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .form-content button {
+      background-color: #2D3E50;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-content button:hover {
+      background-color: #4C5C6D;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/ImageMediaTech.png" alt="Logo de MediaTech">
+  </header>
+
+  <section class="hero">
+    <h1>Software Innovador para Medios de Comunicación</h1>
+    <p>Optimiza la producción y distribución de contenido con nuestras soluciones avanzadas.</p>
+  </section>
+
+  <section class="features">
+    <h2>Características clave</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <i class="fas fa-broadcast-tower fa-3x"></i>
+        <h3>Gestión de Transmisión</h3>
+        <p>Automatiza y programa la difusión de contenidos en múltiples plataformas.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-file-video fa-3x"></i>
+        <h3>Edición de Contenidos</h3>
+        <p>Facilita la edición y publicación de contenido audiovisual de forma eficiente.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-signal fa-3x"></i>
+        <h3>Monitoreo en Tiempo Real</h3>
+        <p>Supervisa el rendimiento y la distribución del contenido con análisis avanzados.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-container">
+    <div class="form-content">
+      <h2>¿Te interesa nuestro software?</h2>
+      <form>
+        <input type="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Solicitar más información</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MediaTech. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
