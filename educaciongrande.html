@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AxentDev - Software de Soporte para Educación</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Incluye Font Awesome para los iconos de redes sociales -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
@@ -35,33 +34,6 @@
       text-align: center;
       padding: 50px 20px;
       background: linear-gradient(to right, #004D92, #0085D1);
-      color: white;
-    }
-
-    section.features, section.benefits {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    section.features h2, section.benefits h2 {
-      font-size: 36px;
-      color: #333;
-    }
-
-    .feature-list, .benefit-list {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .feature, .benefit {
-      background-color: #004D92;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 250px;
-      margin: 10px;
       color: white;
     }
 
@@ -101,35 +73,22 @@
       color: white;
       cursor: pointer;
       font-size: 16px;
+      height: 48px; /* Tamaño fijo para igualar la altura */
     }
 
     .form-content button:hover {
       background-color: #0070c0;
     }
 
-    .checkbox-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-    }
-
-    /* Asegura que ambos botones tengan el mismo tamaño */
     .btn-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
     }
 
     .btn-primary, .btn-primary-link {
-      width: calc(100% - 24px); /* Hace que el botón se ajuste al ancho del contenedor */
+      width: 100%;
       padding: 12px;
       background-color: #004D92;
       color: white;
@@ -137,38 +96,13 @@
       border-radius: 5px;
       cursor: pointer;
       text-decoration: none;
-      margin: 10px 0; /* Asegura que el margen sea igual entre los botones */
-      height: 48px; /* Tamaño más adecuado */
+      height: 48px; /* Iguala la altura de ambos botones */
     }
 
     .btn-primary:hover, .btn-primary-link:hover {
       background-color: #0070c0;
     }
 
-    .justified-text {
-      text-align: justify;
-      font-size: 14px;
-      color: #333;
-      display: block;
-      margin-top: 10px;
-    }
-
-    .btn-primary-link {
-      display: inline-block; /* Hace que se comporte como un bloque para mantener la estructura */
-      width: calc(100% - 24px); /* Hace que el botón se ajuste al ancho del contenedor */
-      padding: 12px;
-      background-color: #004D92;
-      color: white;
-      text-align: center;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      margin: 10px 0; /* Asegura que el margen sea igual entre los botones */
-      height: 48px; /* Iguales en altura */
-      line-height: 24px; /* Ajusta la alineación del texto dentro del enlace */
-    }
-
-    /* Estilo para los iconos de redes sociales */
     .social-icons {
       display: flex;
       justify-content: center;
@@ -198,42 +132,6 @@
     <p>Optimiza tu servicio de soporte educativo con nuestra solución de software innovadora.</p>
   </section>
 
-  <section class="features">
-    <h2>Características Principales</h2>
-    <div class="feature-list">
-      <div class="feature">
-        <h3>Soporte Multicanal</h3>
-        <p>Ofrece soporte a través de varios canales como correo, chat en vivo y redes sociales.</p>
-      </div>
-      <div class="feature">
-        <h3>Gestión de Tickets</h3>
-        <p>Organiza y resuelve tickets de soporte de manera eficiente para mejorar la experiencia del usuario.</p>
-      </div>
-      <div class="feature">
-        <h3>Automatización</h3>
-        <p>Automatiza tareas repetitivas y proporciona respuestas instantáneas con bots inteligentes.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="benefits">
-    <h2>Beneficios del Software</h2>
-    <div class="benefit-list">
-      <div class="benefit">
-        <h3>Mejora la Eficiencia</h3>
-        <p>Reduce los tiempos de respuesta y mejora la eficiencia del equipo de soporte.</p>
-      </div>
-      <div class="benefit">
-        <h3>Aumenta la Satisfacción</h3>
-        <p>Brinda una experiencia de soporte más fluida y satisfactoria para los estudiantes.</p>
-      </div>
-      <div class="benefit">
-        <h3>Escalabilidad</h3>
-        <p>Escala tu sistema de soporte a medida que tu institución crece.</p>
-      </div>
-    </div>
-  </section>
-
   <section class="form-container">
     <div class="form-content">
       <h2>Ingresa Tu Correo Electrónico</h2>
@@ -243,24 +141,20 @@
         <div class="checkbox-container">
           <input type="checkbox" id="accept" name="accept">
         </div>
-        <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+        <label for="accept">Acepto los términos y condiciones</label>
 
         <div class="checkbox-container">
-          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://https://axentdev.netlify.app//aviso-de-privacidad" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
+          <label for="privacy-consent">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información.</label>
         </div>
 
-        <!-- Contenedor de botones para alinearlos verticalmente -->
         <div class="btn-container">
           <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
-
-          <!-- Botón Volver a la Página Inicial -->
           <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
         </div>
       </form>
     </div>
   </section>
 
-  <!-- Sección con botones de redes sociales -->
   <section class="social-icons">
     <a href="https://www.instagram.com/axentdev/" target="_blank" class="fab fa-instagram"></a>
     <a href="https://x.com/AxentDev" target="_blank" class="fab fa-twitter"></a>
