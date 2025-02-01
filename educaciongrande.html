@@ -120,9 +120,14 @@
     }
 
     /* Asegura que ambos botones tengan el mismo tamaño */
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .btn-primary {
-      display: inline-block;
-      width: calc(100% - 24px);  /* Hace que el botón se ajuste al ancho del contenedor */
+      width: calc(100% - 24px); /* Hace que el botón se ajuste al ancho del contenedor */
       padding: 12px;
       background-color: #004D92;
       color: white;
@@ -130,7 +135,7 @@
       border-radius: 5px;
       cursor: pointer;
       text-decoration: none;
-      margin: 10px 12px; /* Asegura que el margen sea igual para ambos botones */
+      margin: 10px 0; /* Asegura que el margen sea igual entre los botones */
     }
 
     .btn-primary:hover {
@@ -145,9 +150,7 @@
       margin-top: 10px;
     }
 
-    /* Estilo para el enlace "Volver a la Página Inicial" */
     .btn-primary-link {
-      display: inline-block;
       width: calc(100% - 24px); /* Igual al del botón anterior */
       padding: 12px;
       background-color: #004D92;
@@ -156,7 +159,7 @@
       border-radius: 5px;
       cursor: pointer;
       text-decoration: none;
-      margin: 10px 12px;  /* Asegura que ambos botones tengan el mismo margen */
+      margin: 10px 0;  /* Asegura que ambos botones tengan el mismo margen */
     }
 
     .btn-primary-link:hover {
@@ -226,10 +229,13 @@
           <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que Zendesk recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
         </div>
 
-        <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
+        <!-- Contenedor de botones para alinearlos verticalmente -->
+        <div class="btn-container">
+          <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
 
-        <!-- Botón Volver a la Página Inicial, con el mismo tamaño -->
-        <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
+          <!-- Botón Volver a la Página Inicial -->
+          <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
+        </div>
       </form>
     </div>
   </section>
