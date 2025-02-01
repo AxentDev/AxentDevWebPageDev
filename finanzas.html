@@ -157,19 +157,6 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("find-solution").addEventListener("click", function () {
-        var companySize = document.getElementById("company-size").value;
-        var industry = document.getElementById("industry").value;
-
-        if (companySize && industry === "educacion") {
-          window.location.href = "educaciongrande.html";
-        }
-
-        if (companySize && industry === "finanzas") {
-          window.location.href = "finanzas.html";
-        }
-      });
-
       document.getElementById("back-to-home-btn").addEventListener("click", function () {
         window.location.href = "index.html";
       });
