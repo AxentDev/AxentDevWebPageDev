@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AxentDev - Software para la Industria de Producción</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #2D3E50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    section.hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #2D3E50, #4C5C6D);
+      color: white;
+    }
+
+    section.features, section.benefits {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section.features h2, section.benefits h2 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .feature-list, .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .feature, .benefit {
+      background-color: #2D3E50;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      margin: 10px;
+      color: white;
+    }
+
+    .form-container {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: auto;
+    }
+
+    .form-content {
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-content h2 {
+      text-align: center;
+    }
+
+    .form-content input[type="email"], .form-content button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .form-content button {
+      background-color: #2D3E50;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-content button:hover {
+      background-color: #4C5C6D;
+    }
+
+    .checkbox-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn-primary, .btn-primary-link {
+      width: calc(100% - 24px);
+      padding: 12px;
+      background-color: #2D3E50;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 10px 0;
+      height: 48px;
+    }
+
+    .btn-primary:hover, .btn-primary-link:hover {
+      background-color: #4C5C6D;
+    }
+
+    .justified-text {
+      text-align: justify;
+      font-size: 14px;
+      color: #333;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .btn-primary-link {
+      height: 23px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      color: #2D3E50;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid #2D3E50;
+    }
+
+    .social-icons a:hover {
+      background-color: #2D3E50;
+      color: white;
+    }
+
+    /* Centrado del título */
+    section.content h2 {
+      text-align: center;
+    }
+
+    /* Centrado del texto adicional */
+    section.content p {
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
+  </header>
+
+  <section class="hero">
+    <h1>Software Innovador para la Industria de Producción</h1>
+    <p>Optimiza tus procesos productivos con nuestras soluciones tecnológicas avanzadas.</p>
+  </section>
+
+  <section class="content">
+    <h2>¿Por qué elegir nuestro software para la industria de producción?</h2>
+    <p>AxentDev ofrece soluciones digitales que optimizan los procesos de producción, mejoran la gestión de inventarios, y permiten una supervisión en tiempo real de la cadena de valor.</p>
+  </section>
+
+  <section class="features">
+    <h2>Características clave</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <i class="fas fa-cogs fa-3x"></i>
+        <h3>Automatización de Procesos</h3>
+        <p>Mejora la eficiencia y reduce errores mediante la automatización.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-warehouse fa-3x"></i>
+        <h3>Gestión de Inventarios</h3>
+        <p>Controla el inventario en tiempo real y reduce los costos de almacenamiento.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-chart-line fa-3x"></i>
+        <h3>Optimización de la Producción</h3>
+        <p>Mejora los tiempos de producción y reduce el desperdicio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>Beneficios de nuestra solución</h2>
+    <div class="benefit-list">
+      <div class="benefit">
+        <h3>Aumento de Productividad</h3>
+        <p>Maximiza el rendimiento de tu producción a través de una mejor planificación y control.</p>
+      </div>
+      <div class="benefit">
+        <h3>Reducción de Costos</h3>
+        <p>Minimiza los costos operativos y reduce pérdidas mediante la optimización de recursos.</p>
+      </div>
+      <div class="benefit">
+        <h3>Seguridad en la Producción</h3>
+        <p>Garantiza la seguridad de los procesos mediante sistemas de monitoreo y control.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-container">
+    <div class="form-content">
+      <h2>¿Te interesa nuestro software?</h2>
+      <form>
+        <input type="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Solicitar más información</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
