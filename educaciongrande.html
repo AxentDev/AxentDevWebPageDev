@@ -1,40 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solución AxentDev - Educación Grande</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #3d8bde;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        main {
-            margin: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AxentDev - Software de Soporte para Educación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #004D92;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+    section.hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #004D92, #0085D1);
+      color: white;
+    }
+    section.features, section.benefits {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section.features h2, section.benefits h2 {
+      font-size: 36px;
+      color: #333;
+    }
+    .feature-list, .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .feature, .benefit {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 250px;
+      margin: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Puedes agregar scripts adicionales si es necesario
+    });
+  </script>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a la solución de AxentDev</h1>
-    </header>
 
-    <main>
-        <h2>Solución para empresas grandes en la industria de educación</h2>
-        <p>Esta es la solución que ofrecemos para empresas con más de 5000 empleados en la industria de educación.</p>
-        <!-- Aquí puedes agregar más detalles sobre la solución -->
-    </main>
+  <!-- Header with Logo -->
+  <header>
+    <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Software de Soporte para Educación</h1>
+    <p>Optimiza tu servicio de soporte educativo con nuestra solución de software innovadora.</p>
+    <button class="btn-primary">Solicita una Demo</button>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Características Principales</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Soporte Multicanal</h3>
+        <p>Ofrece soporte a través de varios canales como correo, chat en vivo y redes sociales.</p>
+      </div>
+      <div class="feature">
+        <h3>Gestión de Tickets</h3>
+        <p>Organiza y resuelve tickets de soporte de manera eficiente para mejorar la experiencia del usuario.</p>
+      </div>
+      <div class="feature">
+        <h3>Automatización</h3>
+        <p>Automatiza tareas repetitivas y proporciona respuestas instantáneas con bots inteligentes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits">
+    <h2>Beneficios del Software</h2>
+    <div class="benefit-list">
+      <div class="benefit">
+        <h3>Mejora la Eficiencia</h3>
+        <p>Reduce los tiempos de respuesta y mejora la eficiencia del equipo de soporte.</p>
+      </div>
+      <div class="benefit">
+        <h3>Aumenta la Satisfacción</h3>
+        <p>Brinda una experiencia de soporte más fluida y satisfactoria para los estudiantes.</p>
+      </div>
+      <div class="benefit">
+        <h3>Escalabilidad</h3>
+        <p>Escala tu sistema de soporte a medida que tu institución crece.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <h2>¿Listo para mejorar tu soporte?</h2>
+    <button class="btn-primary">Solicita una Demo Ahora</button>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
