@@ -134,13 +134,12 @@
     .btn-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: stretch; /* Cambié de center a stretch para asegurar que los botones ocupen todo el ancho */
       gap: 10px;
     }
 
     .btn-primary, .btn-primary-link {
-      display: block; /* Asegura que los botones ocupen el 100% del ancho */
-      width: 100%;
+      width: 100%; /* Asegura que los botones ocupen el 100% del ancho del contenedor */
       padding: 12px;
       text-align: center;
       border-radius: 5px;
