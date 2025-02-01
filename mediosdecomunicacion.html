@@ -118,6 +118,18 @@
       font-size: 14px;
     }
 
+    /* Nuevo estilo para el checkbox */
+    .checkbox-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+      margin-bottom: 10px;
+    }
+
     /* Estilo para los botones */
     .btn-container {
       display: flex;
@@ -127,9 +139,7 @@
     }
 
     .btn-primary, .btn-primary-link {
-      display: inline-block;
-      width: 100%;  /* Asegura que ambos botones tengan el mismo ancho */
-      max-width: 400px;  /* Establece un ancho máximo para no ocupar todo el espacio disponible */
+      width: 100%;
       padding: 12px;
       text-align: center;
       border-radius: 5px;
@@ -138,14 +148,11 @@
       font-size: 16px;
       text-decoration: none;
       cursor: pointer;
-      height: 50px;  /* Asegura que ambos botones tengan la misma altura */
-      box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
     }
 
     .btn-primary:hover, .btn-primary-link:hover {
       background-color: #4C5C6D;
     }
-
   </style>
 </head>
 <body>
@@ -157,6 +164,27 @@
   <section class="hero">
     <h1>Software Innovador para Medios de Comunicación</h1>
     <p>Optimiza la producción y distribución de contenido con nuestras soluciones avanzadas.</p>
+  </section>
+
+  <section class="features">
+    <h2>Características clave</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <i class="fas fa-broadcast-tower fa-3x"></i>
+        <h3>Gestión de Transmisión</h3>
+        <p>Automatiza y programa la difusión de contenidos en múltiples plataformas.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-file-video fa-3x"></i>
+        <h3>Edición de Contenidos</h3>
+        <p>Facilita la edición y publicación de contenido audiovisual de forma eficiente.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-signal fa-3x"></i>
+        <h3>Monitoreo en Tiempo Real</h3>
+        <p>Supervisa el rendimiento y la distribución del contenido con análisis avanzados.</p>
+      </div>
+    </div>
   </section>
 
   <section class="form-container">
@@ -183,7 +211,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
+    <p>&copy; 2025 MediaTech. Todos los derechos reservados.</p>
   </footer>
 
 </body>
