@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxentDev - Software para Medios de Comunicación</title>
+  <title>Software Innovador para Medios de Comunicación</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
@@ -106,6 +106,13 @@
       background-color: #4C5C6D;
     }
 
+    .checkbox-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -113,54 +120,73 @@
       color: white;
     }
 
-    .justified-text {
-      text-align: justify;
-      font-size: 14px;
-    }
-
-    /* Nuevo estilo para el checkbox */
-    .checkbox-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .checkbox-container input[type="checkbox"] {
-      margin-bottom: 10px;
-    }
-
-    /* Estilo para los botones */
     .btn-container {
       display: flex;
       flex-direction: column;
-      align-items: stretch; /* Cambié de center a stretch para asegurar que los botones ocupen todo el ancho */
-      gap: 10px;
+      align-items: center;
     }
 
     .btn-primary, .btn-primary-link {
-      width: 100%; /* Asegura que los botones ocupen el 100% del ancho del contenedor */
+      width: calc(100% - 24px);
       padding: 12px;
-      text-align: center;
-      border-radius: 5px;
       background-color: #2D3E50;
       color: white;
-      font-size: 16px;
-      text-decoration: none;
+      text-align: center;
+      border-radius: 5px;
       cursor: pointer;
-    }
-
-    /* Establece el mismo alto para ambos botones */
-    .btn-primary {
-      height: 50px; /* Alto fijo */
-    }
-
-    .btn-primary-link {
-      height: 50px; /* Alto fijo */
+      text-decoration: none;
+      margin: 10px 0;
+      height: 48px;
     }
 
     .btn-primary:hover, .btn-primary-link:hover {
       background-color: #4C5C6D;
+    }
+
+    .justified-text {
+      text-align: justify;
+      font-size: 14px;
+      color: #333;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .btn-primary-link {
+      height: 23px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      color: #2D3E50;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid #2D3E50;
+    }
+
+    .social-icons a:hover {
+      background-color: #2D3E50;
+      color: white;
+    }
+
+    /* Centrado del título */
+    section.content h2 {
+      text-align: center;
+    }
+
+    /* Centrado del texto adicional */
+    section.content p {
+      text-align: center;
+      font-size: 18px;
+      color: #333;
     }
   </style>
 </head>
@@ -179,23 +205,24 @@
     <h2>Características clave</h2>
     <div class="feature-list">
       <div class="feature">
-        <i class="fas fa-broadcast-tower fa-3x"></i>
+        <i class="fas fa-cogs fa-3x"></i>
         <h3>Gestión de Transmisión</h3>
         <p>Automatiza y programa la difusión de contenidos en múltiples plataformas.</p>
       </div>
       <div class="feature">
-        <i class="fas fa-file-video fa-3x"></i>
+        <i class="fas fa-warehouse fa-3x"></i>
         <h3>Edición de Contenidos</h3>
         <p>Facilita la edición y publicación de contenido audiovisual de forma eficiente.</p>
       </div>
       <div class="feature">
-        <i class="fas fa-signal fa-3x"></i>
+        <i class="fas fa-chart-line fa-3x"></i>
         <h3>Monitoreo en Tiempo Real</h3>
-        <p>Supervisa el rendimiento y la distribución del contenido con análisis avanzados.</p>
+        <p>Supervisa el rendimiento y la distribución del contenido con análisis avanzados..</p>
       </div>
     </div>
   </section>
 
+  
   <section class="form-container">
       <div class="form-content">
         <h2>Ingresa Tu Correo Electrónico</h2>
@@ -204,23 +231,24 @@
   
           <div class="checkbox-container">
             <input type="checkbox" id="accept" name="accept">
-            <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
           </div>
+          <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
   
           <div class="checkbox-container">
-            <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con el <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
+            <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
           </div>
   
           <div class="btn-container">
             <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
+  
             <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
           </div>
         </form>
       </div>
-  </section>
+    </section>
 
   <footer>
-    <p>&copy; 2025 MediaTech. Todos los derechos reservados.</p>
+    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
   </footer>
 
 </body>
