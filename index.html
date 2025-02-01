@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AxentDev - Desarrollo de Software</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Incluye Font Awesome para los iconos de redes sociales -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
@@ -23,7 +22,7 @@
     header img {
       max-width: 200px;
       display: block;
-      margin: 0 auto; /* Esto centra la imagen */
+      margin: 0 auto;
     }
     section.hero {
       text-align: center;
@@ -69,16 +68,16 @@
     .form-container select {
       padding: 10px;
       font-size: 16px;
-      width: 300px; /* Aumenta el ancho de los campos */
+      width: 300px;
       margin: 10px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
-      background-color: #004D92; /* Fondo azul */
-      color: white; /* Texto blanco */
+      background-color: #004D92;
+      color: white;
     }
     .form-container select option {
-      background-color: #004D92; /* Fondo azul para las opciones */
-      color: white; /* Texto blanco para las opciones */
+      background-color: #004D92;
+      color: white;
     }
     .form-container button {
       padding: 12px 25px;
@@ -87,52 +86,60 @@
       border-radius: 5px;
       margin: 15px 0;
       cursor: pointer;
-      width: 300px; /* Asegura que los botones tengan el mismo tamaño que los select */
+      width: 300px;
     }
     .btn-solution {
-      background-color: #0085D1; /* Azul */
+      background-color: #0085D1;
       color: white;
     }
     .btn-solution:hover {
       background-color: #005F8A;
     }
     .btn-no-optimization {
-      background-color: #ccc; /* Gris claro */
+      background-color: #ccc;
       color: black;
     }
     .btn-no-optimization:hover {
       background-color: #999;
     }
     .btn-container {
-      margin-top: 20px; /* Nueva clase para los botones */
+      margin-top: 20px;
+    }
+    .social-icons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .social-icons a {
+      font-size: 36px;
+      color: #004D92;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #0085D1;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with Logo -->
   <header>
     <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <h1>Bienvenido a AxentDev</h1>
     <p>Tu empresa de desarrollo de software, creando soluciones innovadoras.</p>
     <button class="btn-primary">Contáctanos</button>
   </section>
 
-  <!-- Content Section -->
   <section class="content">
     <h2>¿Por qué elegir AxentDev?</h2>
     <p>En AxentDev nos especializamos en crear aplicaciones innovadoras y de alta calidad que se adaptan a tus necesidades.</p>
   </section>
 
-  <!-- Formulario con los campos desplegables y botones -->
   <section class="form-container">
     <h2>Cuéntanos más sobre tu empresa</h2>
     <form id="company-form">
-      <!-- Campo "Yo trabajo en:" -->
       <label for="company-size">Yo trabajo en:</label>
       <select id="company-size" name="company-size">
         <option value="">Selecciona el tamaño de compañía</option>
@@ -143,7 +150,6 @@
         <option value="emergente">Emergente (1 a 9 empleados)</option>
       </select>
 
-      <!-- Campo "Empresa en:" -->
       <label for="industry">Empresa en:</label>
       <select id="industry" name="industry">
         <option value="">Selecciona tu industria</option>
@@ -160,7 +166,6 @@
         <option value="otro">Otro</option>
       </select>
 
-      <!-- Botones -->
       <div class="btn-container">
         <button type="button" class="btn-solution">Encuentra mi solución &rarr;</button>
         <button type="button" class="btn-no-optimization">No optimice mi experiencia</button>
@@ -168,40 +173,16 @@
     </form>
   </section>
 
-  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const btnSolution = document.querySelector(".btn-solution");
-      const form = document.getElementById("company-form");
-
-      btnSolution.addEventListener("click", function() {
-        let companySize = document.getElementById("company-size").value;
-        let industry = document.getElementById("industry").value;
-
-        // Validación para asegurarse de que se seleccionaron valores
-        if (!companySize || !industry) {
-          alert("Por favor, completa ambos campos.");
-          return;
-        }
-
-        if (companySize === "grande" && industry === "educacion") {
-          window.location.href = "educaciongrande.html";
-        } else {
-          alert("Aún no tenemos una solución específica para esta combinación. Pronto agregaremos más opciones.");
-        }
-      });
-    });
-  </script>
-  <!-- Sección con botones de redes sociales -->
   <section class="social-icons">
     <a href="https://www.instagram.com/axentdev/" target="_blank" class="fab fa-instagram"></a>
     <a href="https://x.com/AxentDev" target="_blank" class="fab fa-twitter"></a>
     <a href="https://www.linkedin.com/in/axentdev-de-mendoza-79790b34a/" target="_blank" class="fab fa-linkedin"></a>
     <a href="https://wa.me/573112687118" target="_blank" class="fab fa-whatsapp"></a>
   </section>
+
 </body>
 </html>
