@@ -190,63 +190,63 @@
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("find-solution").addEventListener("click", function () {
-        var companySize = document.getElementById("company-size").value;
-        var industry = document.getElementById("industry").value;
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("find-solution").addEventListener("click", function () {
+      var companySize = document.getElementById("company-size").value;
+      var industry = document.getElementById("industry").value;
 
-        // Redirigir si cualquier tamaño de empresa o la industria es "Educación"
-        if (companySize && industry === "educacion") {
-          window.location.href = "educaciongrande.html";
-        }
-        // Redirigir si la industria es "Finanzas"
-        if (companySize && industry === "finanzas") {
-          window.location.href = "finanzas.html";
-        }
-        // Redirigir si la industria es "Seguros"
-        if (companySize && industry === "seguros") {
-          window.location.href = "seguros.html";
-        }
-        // Redirigir si la industria es "Salud"
-        if (companySize && industry === "salud") {
-          window.location.href = "salud.html";
-        }
-        // Redirigir si la industria es "Producción"
-        if (companySize && industry === "produccion") {
-          window.location.href = "produccion.html";
-        }
-        // Redirigir si la industria es "Medios De Comunicación"
-        if (companySize && industry === "medios-de-comunicacion") {
-          window.location.href = "mediosdecomunicacion.html";
-        }
-        // Redirigir si la industria es "Ventas/Comercio On Line"
-        if (companySize && industry === "ventascomercioonline") {
-          window.location.href = "ventascomercioonline.html";
-        }
-        // Redirigir si la industria es "Software Y Servicios Tecnológicos"
-        if (companySize && industry === "softwareyserviciostecnológicos") {
-          window.location.href = "softwareyserviciostecnológicos.html";
-        }
-        // Redirigir si la industria es "Telecomunicaciones"
-        if (companySize && industry === "telecomunicaciones") {
-          window.location.href = "telecomunicaciones.html";
-        }
-        // Redirigir si la industria es "Transporte"
-        if (companySize && industry === "transporte") {
-          window.location.href = "transporte.html";
-        }
-        // Redirigir si la industria es "Otro"
-        if (companySize && industry === "otro") {
-          window.location.href = "otro.html";
-        }
-      });
-
-      document.getElementById("no-optimization-btn").addEventListener("click", function () {
-        // Redirigir a la página 'no-optimization.html'
-        window.location.href = "no-optimization.html";
-      });
+      // Redirigir si cualquier tamaño de empresa o la industria es "Educación"
+      if (companySize && industry === "educacion") {
+        window.location.href = "educaciongrande.html";
+      }
+      // Redirigir si la industria es "Finanzas"
+      if (companySize && industry === "finanzas") {
+        window.location.href = "finanzas.html";
+      }
+      // Redirigir si la industria es "Seguros"
+      if (companySize && industry === "seguros") {
+        window.location.href = "seguros.html";
+      }
+      // Redirigir si la industria es "Salud"
+      if (companySize && industry === "salud") {
+        window.location.href = "salud.html";
+      }
+      // Redirigir si la industria es "Producción"
+      if (companySize && industry === "produccion") {
+        window.location.href = "produccion.html";
+      }
+      // Redirigir si la industria es "Medios de Comunicación"
+      if (companySize && industry === "medios-comunicacion") {
+        window.location.href = "mediosdecomunicacion.html";
+      }
+      // Redirigir si la industria es "Ventas/Comercio On Line"
+      if (companySize && industry === "ventas") {
+        window.location.href = "ventascomercioonline.html";
+      }
+      // Redirigir si la industria es "Software Y Servicios Tecnológicos"
+      if (companySize && industry === "software") {
+        window.location.href = "softwareyserviciostecnológicos.html";
+      }
+      // Redirigir si la industria es "Telecomunicaciones"
+      if (companySize && industry === "telecomunicaciones") {
+        window.location.href = "telecomunicaciones.html";
+      }
+      // Redirigir si la industria es "Transporte"
+      if (companySize && industry === "transporte") {
+        window.location.href = "transporte.html";
+      }
+      // Redirigir si la industria es "Otro"
+      if (companySize && industry === "otro") {
+        window.location.href = "otro.html";
+      }
     });
-  </script>
+
+    document.getElementById("no-optimization-btn").addEventListener("click", function () {
+      // Redirigir a la página 'no-optimization.html'
+      window.location.href = "no-optimization.html";
+    });
+  });
+</script>
 
 </body>
 </html>
