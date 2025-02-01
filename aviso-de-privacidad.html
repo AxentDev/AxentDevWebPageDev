@@ -13,6 +13,9 @@
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -28,38 +31,24 @@
       margin: 0 auto;
     }
 
-    section.hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: linear-gradient(to right, #004D92, #0085D1);
-      color: white;
-    }
-
-    section.features, section.benefits {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    section.features h2, section.benefits h2 {
-      font-size: 36px;
-      color: #333;
-    }
-
-    .feature-list, .benefit-list {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .feature, .benefit {
-      background-color: #004D92;
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
       padding: 20px;
+      background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 250px;
-      margin: 10px;
-      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004D92;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 16px;
+      color: #333;
     }
 
     footer {
@@ -67,20 +56,38 @@
       padding: 20px;
       background-color: #333;
       color: white;
+      margin-top: auto;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #004D92;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0070c0;
     }
 
     .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin: 20px 0;
+      text-align: center;
+      margin-top: 20px;
     }
 
     .social-icons a {
-      font-size: 36px;
+      font-size: 30px;
       color: #004D92;
       text-decoration: none;
       padding: 10px;
+      margin: 0 10px;
       border-radius: 50%;
       background-color: white;
       border: 2px solid #004D92;
@@ -90,15 +97,6 @@
       background-color: #004D92;
       color: white;
     }
-
-    .justified-text {
-      text-align: justify;
-      font-size: 14px;
-      color: #333;
-      display: block;
-      margin-top: 10px;
-    }
-
   </style>
 </head>
 <body>
@@ -107,30 +105,23 @@
     <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
   </header>
 
-  <section class="hero">
+  <div class="content">
     <h1>Aviso de Privacidad</h1>
-    <p>AxentDev respeta y protege tu privacidad. A continuación, te presentamos nuestra política de privacidad.</p>
-  </section>
+    <p>AxentDev se compromete a proteger la privacidad de sus usuarios. La información recopilada será utilizada únicamente para mejorar nuestros servicios y proporcionar una mejor experiencia al usuario.</p>
+    <p>No compartiremos, venderemos ni alquilaremos su información personal a terceros sin su consentimiento explícito. Toda la información proporcionada se maneja de acuerdo con las leyes de protección de datos aplicables.</p>
+    <p>Si tiene alguna pregunta sobre nuestro aviso de privacidad, no dude en ponerse en contacto con nosotros a través de nuestras redes sociales o nuestro correo de soporte.</p>
 
-  <section class="form-container">
-    <div class="form-content">
-      <h2>¿Cómo Usamos Tu Información?</h2>
-      <p>Recopilamos y procesamos la información personal que nos proporcionas para ofrecerte nuestros servicios y mantenerte informado sobre productos y eventos de AxentDev.</p>
-
-      <h3>Consentimiento</h3>
-      <p>Al enviar tus datos personales, das tu consentimiento para que AxentDev recopile, procese y almacene tu información de acuerdo con nuestra política de privacidad.</p>
-
-      <h3>Derechos</h3>
-      <p>Tienes derecho a acceder, rectificar, cancelar o oponerte al tratamiento de tus datos personales en cualquier momento.</p>
+    <div class="btn-container">
+      <a href="index.html" class="btn-primary">Volver a la Página Inicial</a>
     </div>
-  </section>
+  </div>
 
-  <section class="social-icons">
+  <div class="social-icons">
     <a href="https://www.instagram.com/axentdev/" target="_blank" class="fab fa-instagram"></a>
     <a href="https://x.com/AxentDev" target="_blank" class="fab fa-twitter"></a>
     <a href="https://www.linkedin.com/in/axentdev-de-mendoza-79790b34a/" target="_blank" class="fab fa-linkedin"></a>
     <a href="https://wa.me/573112687118" target="_blank" class="fab fa-whatsapp"></a>
-  </section>
+  </div>
 
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
