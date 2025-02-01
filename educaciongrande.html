@@ -197,11 +197,18 @@
   </section>
   
   <style>
+    .form-content form {
+      width: 100%; /* Asegura que el formulario ocupe todo el ancho posible */
+      max-width: 400px; /* Ajusta el ancho máximo del formulario */
+      margin: 0 auto; /* Centra el formulario */
+    }
+  
     .checkbox-container {
       display: flex;
       justify-content: center; /* Centra el contenido */
       align-items: center;
       margin: 10px 0;
+      width: 100%; /* Asegura que el contenedor ocupe el 100% de ancho */
     }
   
     .checkbox-container input {
@@ -209,8 +216,16 @@
     }
   
     .checkbox-container label {
-      max-width: 80%;
+      max-width: 100%; /* Asegura que el label ocupe el mismo ancho que el formulario */
       text-align: left; /* Alinea el texto a la izquierda */
+      display: block;
+      word-wrap: break-word; /* Permite que el texto se divida en varias líneas si es necesario */
+    }
+  
+    .btn-primary {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
     }
   </style>
 
