@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aviso de privacidad de AxentDev, donde garantizamos la protección de tus datos personales.">
   <title>Aviso de Privacidad - AxentDev</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Cargando Font Awesome desde CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Incluye Font Awesome para los iconos de redes sociales -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
@@ -32,24 +31,38 @@
       margin: 0 auto;
     }
 
-    main {
-      max-width: 800px;
-      margin: 40px auto;
+    section.hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #004D92, #0085D1);
+      color: white;
+    }
+
+    section.features, section.benefits {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section.features h2, section.benefits h2 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .feature-list, .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .feature, .benefit {
+      background-color: #004D92;
       padding: 20px;
-      background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      text-align: center;
-      color: #004D92;
-    }
-
-    p {
-      text-align: justify;
-      font-size: 16px;
-      color: #333;
+      width: 250px;
+      margin: 10px;
+      color: white;
     }
 
     footer {
@@ -57,56 +70,38 @@
       padding: 20px;
       background-color: #333;
       color: white;
-      margin-top: auto;
     }
 
-    .btn-container {
-      text-align: center;
-      margin-top: 20px;
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
     }
 
-    .btn-primary {
-      display: inline-block;
-      padding: 12px 20px;
-      background-color: #004D92;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .btn-primary:hover {
-      background-color: #0070c0;
-    }
-
-    .contact-info {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .contact-info a {
+    .social-icons a {
+      font-size: 36px;
       color: #004D92;
       text-decoration: none;
-      font-size: 16px;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid #004D92;
     }
 
-    .contact-info a:hover {
-      color: #0070c0;
-    }
-
-    .social-links {
-      margin-top: 20px;
-    }
-
-    .social-links a {
+    .social-icons a:hover {
+      background-color: #004D92;
       color: white;
-      font-size: 24px;
-      margin: 0 10px;
-      text-decoration: none;
     }
 
-    .social-links a:hover {
-      color: #0070c0;
+    .justified-text {
+      text-align: justify;
+      font-size: 14px;
+      color: #333;
+      display: block;
+      margin-top: 10px;
     }
+
   </style>
 </head>
 <body>
@@ -115,27 +110,30 @@
     <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
   </header>
 
-  <main>
+  <section class="hero">
     <h1>Aviso de Privacidad</h1>
-    <p>AxentDev se compromete a proteger la privacidad de sus usuarios. La información recopilada será utilizada únicamente para mejorar nuestros servicios y proporcionar una mejor experiencia al usuario.</p>
-    <p>No compartiremos, venderemos ni alquilaremos su información personal a terceros sin su consentimiento explícito. Toda la información proporcionada se maneja de acuerdo con las leyes de protección de datos aplicables.</p>
-    <p>Si tiene alguna pregunta sobre nuestro aviso de privacidad, no dude en ponerse en contacto con nosotros a través de nuestras redes sociales o nuestro correo de soporte.</p>
+    <p>AxentDev respeta y protege tu privacidad. A continuación, te presentamos nuestra política de privacidad.</p>
+  </section>
 
-    <div class="contact-info">
-      <p>Si deseas más información, contáctanos al correo: <a href="mailto:support@axentdev.com">support@axentdev.com</a></p>
-    </div>
+  <section class="form-container">
+    <div class="form-content">
+      <h2>¿Cómo Usamos Tu Información?</h2>
+      <p>Recopilamos y procesamos la información personal que nos proporcionas para ofrecerte nuestros servicios y mantenerte informado sobre productos y eventos de AxentDev.</p>
 
-    <div class="social-links">
-      <a href="https://facebook.com/AxentDev" target="_blank" class="fab fa-facebook"></a>
-      <a href="https://twitter.com/AxentDev" target="_blank" class="fab fa-twitter"></a>
-      <a href="https://linkedin.com/company/AxentDev" target="_blank" class="fab fa-linkedin"></a>
-      <a href="https://instagram.com/AxentDev" target="_blank" class="fab fa-instagram"></a>
-    </div>
+      <h3>Consentimiento</h3>
+      <p>Al enviar tus datos personales, das tu consentimiento para que AxentDev recopile, procese y almacene tu información de acuerdo con nuestra política de privacidad.</p>
 
-    <div class="btn-container">
-      <a href="index.html" class="btn-primary">Volver a la Página Inicial</a>
+      <h3>Derechos</h3>
+      <p>Tienes derecho a acceder, rectificar, cancelar o oponerte al tratamiento de tus datos personales en cualquier momento.</p>
     </div>
-  </main>
+  </section>
+
+  <section class="social-icons">
+    <a href="https://www.instagram.com/axentdev/" target="_blank" class="fab fa-instagram"></a>
+    <a href="https://x.com/AxentDev" target="_blank" class="fab fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/axentdev-de-mendoza-79790b34a/" target="_blank" class="fab fa-linkedin"></a>
+    <a href="https://wa.me/573112687118" target="_blank" class="fab fa-whatsapp"></a>
+  </section>
 
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
