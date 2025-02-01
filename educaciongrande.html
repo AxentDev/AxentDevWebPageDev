@@ -97,6 +97,7 @@
     }
     
     /* Establecer que el campo de correo electrónico tenga un ancho adecuado */
+    /* Establecer que el campo de correo electrónico tenga un ancho adecuado */
     .form-container input[type="email"] {
       width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
       max-width: 100%; /* Previene que el campo se salga del contenedor */
@@ -107,11 +108,13 @@
       font-size: 16px;
       box-sizing: border-box; /* Incluye padding y border en el ancho total */
     }    
+    
     .form-container label {
       font-size: 14px;
       color: #333;
     }
-   /* Centrar el checkbox encima del texto y justificar el texto */
+    
+    /* Centrar el checkbox encima del texto y justificar el texto */
     .form-container .checkbox-container {
       display: flex;
       flex-direction: column; /* Alinea el checkbox encima del texto */
@@ -126,12 +129,18 @@
       text-align: justify; /* Justifica el texto */
       width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
     }
+    
+    /* Interlineado entre los bloques de texto */
+    .form-container .checkbox-container + .checkbox-container {
+      margin-top: 20px; /* Añade espacio entre los dos bloques de texto */
+    }
+    
     footer {
       text-align: center;
       padding: 20px;
       background-color: #333;
       color: white;
-    }
+    }    
   </style>
 </head>
 <body>
