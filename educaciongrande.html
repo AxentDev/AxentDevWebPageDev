@@ -1,224 +1,58 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxentDev - Software de Soporte para Educación</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-    header {
-      background-color: #004D92;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    header img {
-      max-width: 200px;
-      display: block;
-      margin: 0 auto;
-    }
-    section.hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: linear-gradient(to right, #004D92, #0085D1);
-      color: white;
-    }
-    section.features, section.benefits {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    section.features h2, section.benefits h2 {
-      font-size: 36px;
-      color: #333;
-    }
-    .feature-list, .benefit-list {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .feature, .benefit {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      width: 250px;
-      margin: 10px;
-    }
-    /* Botón personalizado */
-    .btn-primary {
-      background-color: #004D92;
-      color: white;
-      padding: 12px 30px;
-      font-size: 16px;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      display: block;
-      margin: 20px auto;
-    }
-    .btn-primary:hover {
-      background-color: #0070c0;
-    }
-    /* Formulario */
-    .form-container {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Centra todo el contenido dentro del formulario */
-      flex-grow: 1; /* Hace que el formulario crezca y ocupe el espacio restante */
-      margin-top: auto; /* Empuja el formulario hacia el final */
-      padding-bottom: 20px;
-    }
-    
-    /* Centrar el título */
-    .form-container h2 {
-      text-align: center; /* Centra el título */
-      width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    }
-    
-    /* Establecer que el campo de correo electrónico tenga un ancho adecuado */
-    .form-container input[type="email"] {
-      width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-      box-sizing: border-box; /* Incluye padding y border en el ancho total */
-    }    
-    
-    .form-container label {
-      font-size: 14px;
-      color: #333;
-    }
-    
-    /* Centrar el checkbox encima del texto y justificar el texto */
-    .form-container .checkbox-container {
-      display: flex;
-      flex-direction: column; /* Alinea el checkbox encima del texto */
-      align-items: flex-start; /* Alinea los elementos al principio */
-    }
-    
-    .form-container .checkbox-container input {
-      margin-bottom: 10px; /* Espacio entre el checkbox y el texto */
-    }
-    
-    .form-container .checkbox-container label {
-      text-align: justify; /* Justifica el texto */
-      width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
-    }
-    
-    /* Interlineado entre los bloques de texto */
-    .form-container .checkbox-container + .checkbox-container {
-      margin-top: 20px; /* Añade espacio entre los dos bloques de texto */
-    }
-    
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-    }    
-  </style>
-</head>
-<body>
+/* Aplicar flexbox en el contenedor principal */
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-  <!-- Header with Logo -->
-  <header>
-    <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
-  </header>
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Asegura que todo el contenido se empuje al final */
+  height: 100%; /* Asegura que ocupe todo el alto disponible */
+  padding-bottom: 20px; /* Espacio en la parte inferior para que no quede pegado */
+}
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Software de Soporte para Educación</h1>
-    <p>Optimiza tu servicio de soporte educativo con nuestra solución de software innovadora.</p>
-  </section>
+/* Establecer que el campo de correo electrónico tenga un ancho adecuado */
+.form-container input[type="email"] {
+  width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
+  max-width: 100%; /* Previene que el campo se salga del contenedor */
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
 
-  <!-- Formulario para el correo electrónico y la casilla de aceptación -->
-  <section class="form-container">
-    <h2>Ingresa Tu Correo Electrónico</h2>
-    <form action="#" method="POST">
-      <input type="email" name="email" placeholder="Correo electrónico" required>
-  
-      <!-- Primer texto con checkbox -->
-      <div class="checkbox-container">
-        <input type="checkbox" id="accept" name="accept">
-        <label for="accept">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
-      </div>
-  
-      <!-- Nuevo texto con interlineado entre los dos textos -->
-      <div class="checkbox-container">
-        <label for="privacy-consent">Al enviar mis datos personales, doy mi consentimiento para que Zendesk recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
-      </div>
-  
-      <!-- Botón -->
-      <button type="submit" class="btn-primary">Haz una Prueba</button>
-    </form>
-  </section>
-  
-  <!-- Features Section -->
-  <section class="features">
-    <h2>Características Principales</h2>
-    <div class="feature-list">
-      <div class="feature">
-        <h3>Soporte Multicanal</h3>
-        <p>Ofrece soporte a través de varios canales como correo, chat en vivo y redes sociales.</p>
-      </div>
-      <div class="feature">
-        <h3>Gestión de Tickets</h3>
-        <p>Organiza y resuelve tickets de soporte de manera eficiente para mejorar la experiencia del usuario.</p>
-      </div>
-      <div class="feature">
-        <h3>Automatización</h3>
-        <p>Automatiza tareas repetitivas y proporciona respuestas instantáneas con bots inteligentes.</p>
-      </div>
-    </div>
-  </section>
+.form-container label {
+  font-size: 14px;
+  color: #333;
+}
 
-  <!-- Benefits Section -->
-  <section class="benefits">
-    <h2>Beneficios del Software</h2>
-    <div class="benefit-list">
-      <div class="benefit">
-        <h3>Mejora la Eficiencia</h3>
-        <p>Reduce los tiempos de respuesta y mejora la eficiencia del equipo de soporte.</p>
-      </div>
-      <div class="benefit">
-        <h3>Aumenta la Satisfacción</h3>
-        <p>Brinda una experiencia de soporte más fluida y satisfactoria para los estudiantes.</p>
-      </div>
-      <div class="benefit">
-        <h3>Escalabilidad</h3>
-        <p>Escala tu sistema de soporte a medida que tu institución crece.</p>
-      </div>
-    </div>
-  </section>
+/* Centrar el checkbox encima del texto y justificar el texto */
+.form-container .checkbox-container {
+  display: flex;
+  flex-direction: column; /* Alinea el checkbox encima del texto */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
 
-  <!-- Footer Section -->
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
-    <a href="index.html">
-      <button class="btn-primary">Volver al Inicio</button>
-    </a>
-  </footer>
+.form-container .checkbox-container input {
+  margin-bottom: 10px; /* Espacio entre el checkbox y el texto */
+}
 
+.form-container .checkbox-container label {
+  text-align: justify; /* Justifica el texto */
+  width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+}
 
-</body>
-</html>
+/* Interlineado entre los bloques de texto */
+.form-container .checkbox-container + .checkbox-container {
+  margin-top: 20px; /* Añade espacio entre los dos bloques de texto */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
