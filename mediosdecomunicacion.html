@@ -112,6 +112,29 @@
       background-color: #333;
       color: white;
     }
+
+    .justified-text {
+      text-align: justify;
+    }
+
+    .btn-primary {
+      background-color: #2D3E50;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background-color: #4C5C6D;
+    }
+
+    .btn-primary-link {
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -152,20 +175,14 @@
         <form action="#" method="POST">
           <input type="email" name="email" placeholder="Correo electrónico" required>
   
-          <div class="checkbox-container">
-            <input type="checkbox" id="accept" name="accept">
-          </div>
+          <input type="checkbox" id="accept" name="accept">
           <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
   
-          <div class="checkbox-container">
-            <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
-          </div>
+          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
   
-          <div class="btn-container">
-            <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
+          <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
   
-            <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
-          </div>
+          <a href="index.html" class="btn-primary btn-primary-link">Volver a la Página Inicial</a>
         </form>
       </div>
   </section>
