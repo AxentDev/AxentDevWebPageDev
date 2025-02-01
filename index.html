@@ -3,204 +3,280 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxentDev - Desarrollo de Software</title>
+  <title>AxentDev - Software de Soporte para Educación</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Fuente para los iconos -->
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
+
     header {
       background-color: #004D92;
       color: white;
       padding: 20px 0;
       text-align: center;
     }
+
     header img {
       max-width: 200px;
       display: block;
-      margin: 0 auto; /* Esto centra la imagen */
+      margin: 0 auto;
     }
+
     section.hero {
       text-align: center;
       padding: 50px 20px;
       background: linear-gradient(to right, #004D92, #0085D1);
       color: white;
     }
-    .btn-primary {
-      padding: 10px 20px;
-      background-color: #0085D1;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    .btn-primary:hover {
-      background-color: #005F8A;
-    }
-    .content {
-      text-align: center;
+
+    section.features, section.benefits {
       padding: 40px 20px;
+      text-align: center;
     }
-    .content h2 {
+
+    section.features h2, section.benefits h2 {
       font-size: 36px;
       color: #333;
     }
+
+    .feature-list, .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .feature, .benefit {
+      background-color: #004D92;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      margin: 10px;
+      color: white;
+    }
+
+    .form-container {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: auto;
+    }
+
+    .form-content {
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-content h2 {
+      text-align: center;
+    }
+
+    .form-content input[type="email"], .form-content button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .form-content button {
+      background-color: #004D92;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-content button:hover {
+      background-color: #0070c0;
+    }
+
+    .checkbox-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #333;
       color: white;
     }
-    .form-container {
-      margin-top: 40px;
+
+    .social-media {
       text-align: center;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
     }
-    .form-container label {
-      font-size: 18px;
-      margin-bottom: 10px;
-      display: block;
+
+    .social-media h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
     }
-    .form-container select {
-      padding: 10px;
-      font-size: 16px;
-      width: 300px; /* Aumenta el ancho de los campos */
-      margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      background-color: #004D92; /* Fondo azul */
-      color: white; /* Texto blanco */
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
-    .form-container select option {
-      background-color: #004D92; /* Fondo azul para las opciones */
-      color: white; /* Texto blanco para las opciones */
+
+    .social-icon {
+      font-size: 30px; /* Aumenta el tamaño de los iconos */
+      color: #333;
+      transition: color 0.3s;
     }
-    .form-container button {
-      padding: 12px 25px;
-      font-size: 18px;
-      border: none;
-      border-radius: 5px;
-      margin: 15px 0;
-      cursor: pointer;
-      width: 300px; /* Asegura que los botones tengan el mismo tamaño que los select */
+
+    .social-icon:hover {
+      color: #004D92;
     }
-    .btn-solution {
-      background-color: #0085D1; /* Azul */
-      color: white;
-    }
-    .btn-solution:hover {
-      background-color: #005F8A;
-    }
-    .btn-no-optimization {
-      background-color: #ccc; /* Gris claro */
-      color: black;
-    }
-    .btn-no-optimization:hover {
-      background-color: #999;
-    }
+
     .btn-container {
-      margin-top: 20px; /* Nueva clase para los botones */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn-primary, .btn-primary-link {
+      width: calc(100% - 24px);
+      padding: 12px;
+      background-color: #004D92;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 10px 0;
+      height: 48px;
+    }
+
+    .btn-primary:hover, .btn-primary-link:hover {
+      background-color: #0070c0;
+    }
+
+    .justified-text {
+      text-align: justify;
+      font-size: 14px;
+      color: #333;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .btn-primary-link {
+      height: 23px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with Logo -->
   <header>
     <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <h1>Bienvenido a AxentDev</h1>
-    <p>Tu empresa de desarrollo de software, creando soluciones innovadoras.</p>
-    <button class="btn-primary">Contáctanos</button>
+    <h1>Software de Soporte para Educación</h1>
+    <p>Optimiza tu servicio de soporte educativo con nuestra solución de software innovadora.</p>
   </section>
 
-  <!-- Content Section -->
-  <section class="content">
-    <h2>¿Por qué elegir AxentDev?</h2>
-    <p>En AxentDev nos especializamos en crear aplicaciones innovadoras y de alta calidad que se adaptan a tus necesidades.</p>
-  </section>
-
-  <!-- Formulario con los campos desplegables y botones -->
-  <section class="form-container">
-    <h2>Cuéntanos más sobre tu empresa</h2>
-    <form id="company-form">
-      <!-- Campo "Yo trabajo en:" -->
-      <label for="company-size">Yo trabajo en:</label>
-      <select id="company-size" name="company-size">
-        <option value="">Selecciona el tamaño de compañía</option>
-        <option value="grande">Grande (Más de 5000 empleados)</option>
-        <option value="mediana-grande">Mediana - Grande (250 a 4999 empleados)</option>
-        <option value="mediana">Mediana (50 a 249 empleados)</option>
-        <option value="pequena">Pequeña (10 a 49 empleados)</option>
-        <option value="emergente">Emergente (1 a 9 empleados)</option>
-      </select>
-
-      <!-- Campo "Empresa en:" -->
-      <label for="industry">Empresa en:</label>
-      <select id="industry" name="industry">
-        <option value="">Selecciona tu industria</option>
-        <option value="educacion">Educación</option>
-        <option value="finanzas">Finanzas</option>
-        <option value="seguros">Seguros</option>
-        <option value="salud">Salud</option>
-        <option value="produccion">Producción</option>
-        <option value="medios-comunicacion">Medios de Comunicación</option>
-        <option value="ventas">Ventas/Comercio Online</option>
-        <option value="software">Software y Servicios Tecnológicos</option>
-        <option value="telecomunicaciones">Telecomunicaciones</option>
-        <option value="transporte">Transporte</option>
-        <option value="otro">Otro</option>
-      </select>
-
-      <!-- Botones -->
-      <div class="btn-container">
-        <button type="button" class="btn-solution">Encuentra mi solución &rarr;</button>
-        <button type="button" class="btn-no-optimization">No optimice mi experiencia</button>
+  <section class="features">
+    <h2>Características Principales</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Soporte Multicanal</h3>
+        <p>Ofrece soporte a través de varios canales como correo, chat en vivo y redes sociales.</p>
       </div>
-    </form>
+      <div class="feature">
+        <h3>Gestión de Tickets</h3>
+        <p>Organiza y resuelve tickets de soporte de manera eficiente para mejorar la experiencia del usuario.</p>
+      </div>
+      <div class="feature">
+        <h3>Automatización</h3>
+        <p>Automatiza tareas repetitivas y proporciona respuestas instantáneas con bots inteligentes.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer Section -->
+  <section class="benefits">
+    <h2>Beneficios del Software</h2>
+    <div class="benefit-list">
+      <div class="benefit">
+        <h3>Mejora la Eficiencia</h3>
+        <p>Reduce los tiempos de respuesta y mejora la eficiencia del equipo de soporte.</p>
+      </div>
+      <div class="benefit">
+        <h3>Aumenta la Satisfacción</h3>
+        <p>Brinda una experiencia de soporte más fluida y satisfactoria para los estudiantes.</p>
+      </div>
+      <div class="benefit">
+        <h3>Escalabilidad</h3>
+        <p>Escala tu sistema de soporte a medida que tu institución crece.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-container">
+    <div class="form-content">
+      <h2>Ingresa Tu Correo Electrónico</h2>
+      <form action="#" method="POST">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="accept" name="accept">
+        </div>
+        <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+
+        <div class="checkbox-container">
+          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://www.axentdev.netlify.app/aviso-de-privacidad" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
+        </div>
+
+        <div class="btn-container">
+          <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
+          <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Redes Sociales -->
+  <section class="social-media">
+    <h2>Síguenos en Redes Sociales</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/axentdev/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/AxentDev" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/axentdev-de-mendoza-79790b34a/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://wa.me/573112687118" target="_blank" class="social-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
   </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const btnSolution = document.querySelector(".btn-solution");
-      const form = document.getElementById("company-form");
-
-      btnSolution.addEventListener("click", function() {
-        let companySize = document.getElementById("company-size").value;
-        let industry = document.getElementById("industry").value;
-
-        // Validación para asegurarse de que se seleccionaron valores
-        if (!companySize || !industry) {
-          alert("Por favor, completa ambos campos.");
-          return;
-        }
-
-        if (companySize === "grande" && industry === "educacion") {
-          window.location.href = "educaciongrande.html";
-        } else {
-          alert("Aún no tenemos una solución específica para esta combinación. Pronto agregaremos más opciones.");
-        }
-      });
-    });
-  </script>
-  <!-- Sección con botones de redes sociales -->
-  <section class="social-icons">
-    <a href="https://www.instagram.com/axentdev/" target="_blank" class="fab fa-instagram"></a>
-    <a href="https://x.com/AxentDev" target="_blank" class="fab fa-twitter"></a>
-    <a href="https://www.linkedin.com/in/axentdev-de-mendoza-79790b34a/" target="_blank" class="fab fa-linkedin"></a>
-    <a href="https://wa.me/573112687118" target="_blank" class="fab fa-whatsapp"></a>
-  </section>
-
+  
 </body>
 </html>
+
