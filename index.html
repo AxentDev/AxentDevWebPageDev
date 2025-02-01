@@ -190,10 +190,10 @@
         var companySize = document.getElementById("company-size").value;
         var industry = document.getElementById("industry").value;
 
-        if (companySize === "grande" && industry === "educacion") {
+        // Redirigir si cualquier tamaño de empresa o la industria es "Educación"
+        if (companySize && industry === "educacion") {
           window.location.href = "educaciongrande.html";
         }
-        // Puedes agregar más condiciones aquí para otras combinaciones
       });
     });
   </script>
