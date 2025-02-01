@@ -6,6 +6,18 @@
   <title>AxentDev - Desarrollo de Software</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
+    <script>
+      document.querySelector(".btn-solution").addEventListener("click", function() {
+        let companySize = document.getElementById("company-size").value;
+        let industry = document.getElementById("industry").value;
+    
+        if (companySize === "grande" && industry === "educacion") {
+          window.location.href = "educaciongrande.html";
+        } else {
+          alert("Aún no tenemos una solución específica para esta combinación. Pronto agregaremos más opciones.");
+        }
+      });
+    </script>
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
