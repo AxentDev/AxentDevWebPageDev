@@ -14,7 +14,6 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      justify-content: space-between;
     }
 
     header {
@@ -37,24 +36,55 @@
       color: white;
     }
 
-    .form-container {
-      max-width: 500px;
-      margin: 0 auto;
+    section.features, section.benefits {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section.features h2, section.benefits h2 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .feature-list, .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .feature, .benefit {
+      background-color: white;
       padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 250px;
+      margin: 10px;
+    }
+
+    /* Formulario */
+    .form-container {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: auto;
+    }
+
+    .form-content {
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      margin: 0 auto;
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
-    .form-container h2 {
+    .form-content h2 {
       text-align: center;
-      width: 100%;
     }
 
-    .form-container input[type="email"], .form-container button {
+    .form-content input[type="email"], .form-content button {
       width: 100%;
       padding: 12px;
       margin: 10px 0;
@@ -64,14 +94,14 @@
       box-sizing: border-box;
     }
 
-    .form-container button {
+    .form-content button {
       background-color: #004D92;
       color: white;
       cursor: pointer;
       font-size: 16px;
     }
 
-    .form-container button:hover {
+    .form-content button:hover {
       background-color: #0070c0;
     }
 
@@ -93,7 +123,7 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header with Logo -->
   <header>
     <img src="images/ImageAxentDev.png" alt="Logo de AxentDev">
   </header>
@@ -104,26 +134,69 @@
     <p>Optimiza tu servicio de soporte educativo con nuestra solución de software innovadora.</p>
   </section>
 
-  <!-- Formulario -->
-  <section class="form-container">
-    <h2>Ingresa Tu Correo Electrónico</h2>
-    <form action="#" method="POST">
-      <input type="email" name="email" placeholder="Correo electrónico" required>
-
-      <div class="checkbox-container">
-        <input type="checkbox" id="accept" name="accept" required>
-        <label for="accept">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Características Principales</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Soporte Multicanal</h3>
+        <p>Ofrece soporte a través de varios canales como correo, chat en vivo y redes sociales.</p>
       </div>
-
-      <div class="checkbox-container">
-        <label for="privacy-consent">Al enviar mis datos personales, doy mi consentimiento para que Zendesk recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
+      <div class="feature">
+        <h3>Gestión de Tickets</h3>
+        <p>Organiza y resuelve tickets de soporte de manera eficiente para mejorar la experiencia del usuario.</p>
       </div>
-
-      <button type="submit">Haz una Prueba</button>
-    </form>
+      <div class="feature">
+        <h3>Automatización</h3>
+        <p>Automatiza tareas repetitivas y proporciona respuestas instantáneas con bots inteligentes.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Benefits Section -->
+  <section class="benefits">
+    <h2>Beneficios del Software</h2>
+    <div class="benefit-list">
+      <div class="benefit">
+        <h3>Mejora la Eficiencia</h3>
+        <p>Reduce los tiempos de respuesta y mejora la eficiencia del equipo de soporte.</p>
+      </div>
+      <div class="benefit">
+        <h3>Aumenta la Satisfacción</h3>
+        <p>Brinda una experiencia de soporte más fluida y satisfactoria para los estudiantes.</p>
+      </div>
+      <div class="benefit">
+        <h3>Escalabilidad</h3>
+        <p>Escala tu sistema de soporte a medida que tu institución crece.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario para el correo electrónico y la casilla de aceptación -->
+  <section class="form-container">
+    <div class="form-content">
+      <h2>Ingresa Tu Correo Electrónico</h2>
+      <form action="#" method="POST">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+
+        <!-- Primer texto con checkbox -->
+        <div class="checkbox-container">
+          <input type="checkbox" id="accept" name="accept">
+          <label for="accept">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+        </div>
+
+        <!-- Nuevo texto con interlineado entre los dos textos -->
+        <div class="checkbox-container">
+          <label for="privacy-consent">Al enviar mis datos personales, doy mi consentimiento para que Zendesk recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
+        </div>
+
+        <!-- Botón -->
+        <button type="submit" class="btn-primary">Haz una Prueba</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
   </footer>
