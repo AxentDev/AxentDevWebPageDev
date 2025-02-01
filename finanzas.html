@@ -163,30 +163,27 @@
   </section>
 
   <section class="form-container">
-    <h2>Cuéntanos más sobre tu empresa</h2>
-    <form id="company-form">
-      <label for="company-size">Yo trabajo en:</label>
-      <select id="company-size" name="company-size">
-        <option value="">Selecciona el tamaño de compañía</option>
-        <option value="grande">Grande (Más de 5000 empleados)</option>
-        <option value="mediana-grande">Mediana - Grande (250 a 4999 empleados)</option>
-        <option value="mediana">Mediana (50 a 249 empleados)</option>
-        <option value="pequena">Pequeña (10 a 49 empleados)</option>
-        <option value="emergente">Emergente (1 a 9 empleados)</option>
-      </select>
-
-      <label for="industry">Empresa en:</label>
-      <select id="industry" name="industry">
-        <option value="">Selecciona tu industria</option>
-        <option value="finanzas">Finanzas</option>
-        <option value="otro">Otro</option>
-      </select>
-
-      <div class="btn-container">
-        <button type="button" class="btn-solution" id="find-solution">Encuentra mi solución &rarr;</button>
-        <button type="button" class="btn-no-optimization" id="no-optimization-btn">Volver a la Página Inicial</button>
+      <div class="form-content">
+        <h2>Ingresa Tu Correo Electrónico</h2>
+        <form action="#" method="POST">
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+  
+          <div class="checkbox-container">
+            <input type="checkbox" id="accept" name="accept">
+          </div>
+          <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+  
+          <div class="checkbox-container">
+            <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.</label>
+          </div>
+  
+          <div class="btn-container">
+            <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
+  
+            <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
+          </div>
+        </form>
       </div>
-    </form>
   </section>
 
   <footer>
