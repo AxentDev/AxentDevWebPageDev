@@ -6,18 +6,6 @@
   <title>AxentDev - Desarrollo de Software</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    <script>
-      document.querySelector(".btn-solution").addEventListener("click", function() {
-        let companySize = document.getElementById("company-size").value;
-        let industry = document.getElementById("industry").value;
-    
-        if (companySize === "grande" && industry === "educacion") {
-          window.location.href = "educaciongrande.html";
-        } else {
-          alert("Aún no tenemos una solución específica para esta combinación. Pronto agregaremos más opciones.");
-        }
-      });
-    </script>
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
@@ -113,6 +101,9 @@
     .btn-no-optimization:hover {
       background-color: #999;
     }
+    .btn-container {
+      margin-top: 20px; /* Nueva clase para los botones */
+    }
   </style>
 </head>
 <body>
@@ -138,7 +129,7 @@
   <!-- Formulario con los campos desplegables y botones -->
   <section class="form-container">
     <h2>Cuéntanos más sobre tu empresa</h2>
-    <form>
+    <form id="company-form">
       <!-- Campo "Yo trabajo en:" -->
       <label for="company-size">Yo trabajo en:</label>
       <select id="company-size" name="company-size">
@@ -168,7 +159,7 @@
       </select>
 
       <!-- Botones -->
-      <div style="margin-top: 20px;">
+      <div class="btn-container">
         <button type="button" class="btn-solution">Encuentra mi solución &rarr;</button>
         <button type="button" class="btn-no-optimization">No optimice mi experiencia</button>
       </div>
@@ -179,6 +170,30 @@
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const btnSolution = document.querySelector(".btn-solution");
+      const form = document.getElementById("company-form");
+
+      btnSolution.addEventListener("click", function() {
+        let companySize = document.getElementById("company-size").value;
+        let industry = document.getElementById("industry").value;
+
+        // Validación para asegurarse de que se seleccionaron valores
+        if (!companySize || !industry) {
+          alert("Por favor, completa ambos campos.");
+          return;
+        }
+
+        if (companySize === "grande" && industry === "educacion") {
+          window.location.href = "educaciongrande.html";
+        } else {
+          alert("Aún no tenemos una solución específica para esta combinación. Pronto agregaremos más opciones.");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
