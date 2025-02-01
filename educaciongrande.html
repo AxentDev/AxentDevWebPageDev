@@ -99,13 +99,20 @@
       font-size: 14px;
       color: #333;
     }
-    /* Justificar el texto en la casilla de aceptación */
-    .form-container .checkbox-container label {
-      text-align: justify;
-      display: block; /* Asegura que el texto ocupe todo el ancho disponible */
+   /* Centrar el checkbox encima del texto y justificar el texto */
+    .form-container .checkbox-container {
+      display: flex;
+      flex-direction: column; /* Alinea el checkbox encima del texto */
+      align-items: center; /* Centra los elementos horizontalmente */
     }
+    
     .form-container .checkbox-container input {
-      margin-right: 10px;
+      margin-bottom: 10px; /* Espacio entre el checkbox y el texto */
+    }
+    
+    .form-container .checkbox-container label {
+      text-align: justify; /* Justifica el texto */
+      width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
     }
     footer {
       text-align: center;
