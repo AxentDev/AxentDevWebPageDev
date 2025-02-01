@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AxentSeguros - Soluciones de Seguros Personalizados</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #004D92;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    section.hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #004D92, #0085D1);
+      color: white;
+    }
+
+    section.features, section.benefits {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section.features h2, section.benefits h2 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .feature-list, .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .feature, .benefit {
+      background-color: #004D92;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      margin: 10px;
+      color: white;
+    }
+
+    .form-container {
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: auto;
+    }
+
+    .form-content {
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-content h2 {
+      text-align: center;
+    }
+
+    .form-content input[type="email"], .form-content button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .form-content button {
+      background-color: #004D92;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-content button:hover {
+      background-color: #0070c0;
+    }
+
+    .checkbox-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn-primary, .btn-primary-link {
+      width: calc(100% - 24px);
+      padding: 12px;
+      background-color: #004D92;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 10px 0;
+      height: 48px;
+    }
+
+    .btn-primary:hover, .btn-primary-link:hover {
+      background-color: #0070c0;
+    }
+
+    .justified-text {
+      text-align: justify;
+      font-size: 14px;
+      color: #333;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .btn-primary-link {
+      height: 23px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      color: #004D92;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid #004D92;
+    }
+
+    .social-icons a:hover {
+      background-color: #004D92;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/ImageAxentSeguros.png" alt="Logo de AxentSeguros">
+  </header>
+
+  <section class="hero">
+    <h1>Protección y Confianza para Tu Futuro</h1>
+    <p>Ofrecemos seguros personalizados para tu tranquilidad.</p>
+  </section>
+
+  <section class="content">
+    <h2>¿Por qué elegir nuestros seguros?</h2>
+    <p>Nos especializamos en ofrecer seguros adaptados a las necesidades de cada cliente, con la confianza que necesitas.</p>
+  </section>
+
+  <section class="feature">
+    <div>
+      <h3>Seguridad</h3>
+      <p>Protegemos tu futuro con coberturas de alta calidad para tu bienestar.</p>
+    </div>
+    <div>
+      <h3>Flexibilidad</h3>
+      <p>Planes de seguros flexibles para cubrir tus necesidades específicas.</p>
+    </div>
+    <div>
+      <h3>Confianza</h3>
+      <p>Te brindamos la tranquilidad de estar respaldado por una empresa de confianza.</p>
+    </div>
+  </section>
+
+  <section class="form-container">
+    <div class="form-content">
+      <h2>Solicita más Información</h2>
+      <form action="#" method="POST">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="accept" name="accept">
+        </div>
+        <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentSeguros se ponga en contacto conmigo para enviarme comunicaciones relacionadas con productos, servicios y eventos de AxentSeguros. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+
+        <div class="checkbox-container">
+          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentSeguros recopile, procese y almacene mi información de acuerdo con la <a href="https://axentseguro.com/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentSeguros</a>.</label>
+        </div>
+
+        <div class="btn-container">
+          <button type="submit" class="btn-primary">¡Solicita Tu Seguro!</button>
+
+          <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="social-icons">
+    <a href="https://www.instagram.com/axentseguro/" target="_blank" class="fab fa-instagram"></a>
+    <a href="https://x.com/AxentSeguros" target="_blank" class="fab fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/axentseguro/" target="_blank" class="fab fa-linkedin"></a>
+    <a href="https://wa.me/573112687118" target="_blank" class="fab fa-whatsapp"></a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AxentSeguros. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
