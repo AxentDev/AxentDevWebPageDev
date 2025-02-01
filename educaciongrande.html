@@ -126,7 +126,7 @@
       align-items: center;
     }
 
-    .btn-primary {
+    .btn-primary, .btn-primary-link {
       width: calc(100% - 24px); /* Hace que el botón se ajuste al ancho del contenedor */
       padding: 12px;
       background-color: #004D92;
@@ -136,9 +136,10 @@
       cursor: pointer;
       text-decoration: none;
       margin: 10px 0; /* Asegura que el margen sea igual entre los botones */
+      height: 50px; /* Fuerza que ambos botones tengan la misma altura */
     }
 
-    .btn-primary:hover {
+    .btn-primary:hover, .btn-primary-link:hover {
       background-color: #0070c0;
     }
 
@@ -151,19 +152,7 @@
     }
 
     .btn-primary-link {
-      width: calc(100% - 24px); /* Igual al del botón anterior */
-      padding: 12px;
-      background-color: #004D92;
-      color: white;
-      text-align: center;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      margin: 10px 0;  /* Asegura que ambos botones tengan el mismo margen */
-    }
-
-    .btn-primary-link:hover {
-      background-color: #0070c0;
+      height: 50px; /* Igual al del botón anterior */
     }
   </style>
 </head>
