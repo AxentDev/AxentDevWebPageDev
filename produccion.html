@@ -248,17 +248,29 @@
   <section class="form-container">
     <div class="form-content">
       <h2>¿Te interesa nuestro software?</h2>
-      <form>
+      <form action="#" method="POST">
         <label for="email">Ingresa tu correo electrónico para recibir más información:</label>
         <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+  
         <div class="checkbox-container">
-          <input type="checkbox" id="agreement" name="agreement" required>
-          <label for="agreement">Acepto los términos y condiciones.</label>
+          <input type="checkbox" id="accept-marketing" name="accept-marketing" required>
+          <label for="accept-marketing">
+            Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.
+          </label>
         </div>
+  
+        <div class="checkbox-container">
+          <input type="checkbox" id="privacy-consent" name="privacy-consent" required>
+          <label for="privacy-consent">
+            Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://axentdev.netlify.app/aviso-de-privacidad.html" target="_blank">Aviso de privacidad de AxentDev</a>.
+          </label>
+        </div>
+  
         <button type="submit">Solicitar más información</button>
       </form>
     </div>
   </section>
+  
   <footer>
     <p>&copy; 2025 AxentDev. Todos los derechos reservados.</p>
   </footer>
