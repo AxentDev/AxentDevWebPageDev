@@ -167,7 +167,7 @@
       </select>
 
       <div class="btn-container">
-        <button type="button" class="btn-solution">Encuentra mi solución &rarr;</button>
+        <button type="button" class="btn-solution" id="find-solution">Encuentra mi solución &rarr;</button>
         <button type="button" class="btn-no-optimization">No optimice mi experiencia</button>
       </div>
     </form>
@@ -183,6 +183,20 @@
     <a href="https://www.linkedin.com/in/axentdev-de-mendoza-79790b34a/" target="_blank" class="fab fa-linkedin"></a>
     <a href="https://wa.me/573112687118" target="_blank" class="fab fa-whatsapp"></a>
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("find-solution").addEventListener("click", function () {
+        var companySize = document.getElementById("company-size").value;
+        var industry = document.getElementById("industry").value;
+
+        if (companySize === "grande" && industry === "educacion") {
+          window.location.href = "educaciongrande.html";
+        }
+        // Puedes agregar más condiciones aquí para otras combinaciones
+      });
+    });
+  </script>
 
 </body>
 </html>
