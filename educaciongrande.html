@@ -109,16 +109,44 @@
       margin-top: 10px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       text-align: justify;
+      width: 100%; /* Asegura que el contenedor ocupe el 100% de ancho */
+      background-color: #3498db; /* Fondo azul */
+      color: white; /* Color del texto */
+      padding: 10px; /* Relleno dentro del cuadro */
+      border-radius: 5px; /* Bordes redondeados */
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
+    .checkbox-container label {
+      text-align: justify;
+      word-wrap: break-word;
+      margin: 0;
     }
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    /* Estilo adicional para botones */
+    .btn-secondary {
+      display: inline-block;
+      width: auto;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .btn-secondary:hover {
+      background-color: #0070c0;
+    }
+
   </style>
 </head>
 <body>
@@ -198,40 +226,6 @@
       </form>
     </div>
   </section>
-  
-  <style>
-    .form-content form {
-      width: 100%; /* Asegura que el formulario ocupe todo el ancho posible */
-      max-width: 400px; /* Ajusta el ancho máximo del formulario */
-      margin: 0 auto; /* Centra el formulario */
-    }
-  
-    .checkbox-container {
-      display: flex;
-      justify-content: center; /* Centra el contenido */
-      align-items: center;
-      margin: 10px 0;
-      width: 100%; /* Asegura que el contenedor ocupe el 100% de ancho */
-    }
-  
-    .checkbox-container input {
-      margin-right: 10px; /* Espacio entre el checkbox y el texto */
-    }
-  
-    .checkbox-container label {
-      max-width: 100%; /* Asegura que el label ocupe el mismo ancho que el formulario */
-      text-align: justify; /* Alinea el texto a la izquierda */
-      display: block;
-      word-wrap: break-word; /* Permite que el texto se divida en varias líneas si es necesario */
-    }
-  
-    .btn-primary {
-      display: block;
-      width: 100%;
-      margin-top: 20px;
-    }
-  </style>
-
 
   <!-- Footer Section -->
   <footer>
