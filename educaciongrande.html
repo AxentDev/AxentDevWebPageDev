@@ -65,6 +65,33 @@
     .btn-primary:hover {
       background-color: #0070c0;
     }
+    /* Formulario */
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .form-container input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .form-container label {
+      font-size: 14px;
+      color: #333;
+    }
+    .form-container .checkbox-container {
+      text-align: left;
+    }
+    .form-container .checkbox-container input {
+      margin-right: 10px;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -84,8 +111,21 @@
   <section class="hero">
     <h1>Software de Soporte para Educación</h1>
     <p>Optimiza tu servicio de soporte educativo con nuestra solución de software innovadora.</p>
-    <!-- Botón de solicitud de demo único -->
-    <button class="btn-primary">Hacer Una Prueba</button>
+    <!-- Botón de hacer una prueba -->
+    <button class="btn-primary">Haz una Prueba</button>
+  </section>
+
+  <!-- Formulario para el correo electrónico y la casilla de aceptación -->
+  <section class="form-container">
+    <h2>Ingresa tu correo electrónico</h2>
+    <form action="#" method="POST">
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <div class="checkbox-container">
+        <input type="checkbox" id="accept" name="accept">
+        <label for="accept">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
+      </div>
+      <button type="submit" class="btn-primary">Haz una Prueba</button>
+    </form>
   </section>
 
   <!-- Features Section -->
