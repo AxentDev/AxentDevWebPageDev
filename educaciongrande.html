@@ -154,8 +154,20 @@
     }
 
     .btn-primary-link {
+      display: inline-block; /* Hace que se comporte como un bloque para mantener la estructura */
+      width: calc(100% - 24px); /* Hace que el botón se ajuste al ancho del contenedor */
+      padding: 12px;
+      background-color: #004D92;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 10px 0; /* Asegura que el margen sea igual entre los botones */
       height: 48px; /* Iguales en altura */
+      line-height: 24px; /* Ajusta la alineación del texto dentro del enlace */
     }
+
 
     /* Estilo para los iconos de redes sociales */
     .social-icons {
