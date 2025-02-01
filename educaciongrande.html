@@ -119,10 +119,10 @@
       color: white;
     }
 
-    /* Estilo para los botones */
+    /* Asegura que ambos botones tengan el mismo tamaño */
     .btn-primary {
-      display: block;
-      width: 100%; /* Asegura que ambos botones tengan el mismo tamaño */
+      display: inline-block;
+      width: calc(100% - 24px);  /* Hace que el botón se ajuste al ancho del contenedor */
       padding: 12px;
       background-color: #004D92;
       color: white;
@@ -130,7 +130,7 @@
       border-radius: 5px;
       cursor: pointer;
       text-decoration: none;
-      margin-top: 10px;
+      margin: 10px 12px; /* Asegura que el margen sea igual para ambos botones */
     }
 
     .btn-primary:hover {
@@ -145,10 +145,10 @@
       margin-top: 10px;
     }
 
-    /* Asegura que el botón Volver a la página inicial tenga el mismo estilo */
+    /* Estilo para el enlace "Volver a la Página Inicial" */
     .btn-primary-link {
-      display: block;  /* Hace que el enlace se comporte como un botón */
-      width: 100%; /* Hace que el enlace tenga el mismo tamaño que el botón */
+      display: inline-block;
+      width: calc(100% - 24px); /* Igual al del botón anterior */
       padding: 12px;
       background-color: #004D92;
       color: white;
@@ -156,13 +156,12 @@
       border-radius: 5px;
       cursor: pointer;
       text-decoration: none;
-      margin-top: 10px;
+      margin: 10px 12px;  /* Asegura que ambos botones tengan el mismo margen */
     }
 
     .btn-primary-link:hover {
       background-color: #0070c0;
     }
-
   </style>
 </head>
 <body>
@@ -224,12 +223,12 @@
         <label for="accept" class="justified-text">Al marcar esta casilla, acepto que AxentDev se ponga en contacto conmigo para enviarme comunicaciones relacionadas con marketing sobre productos, servicios y eventos de AxentDev. Entiendo que puedo cancelar la suscripción en cualquier momento.</label>
 
         <div class="checkbox-container">
-          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que AxentDev recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
+          <label for="privacy-consent" class="justified-text">Al enviar mis datos personales, doy mi consentimiento para que Zendesk recopile, procese y almacene mi información de acuerdo con la <a href="https://www.zendesk.com.mx/aviso-de-privacidad" target="_blank">Aviso de privacidad de Zendesk</a>.</label>
         </div>
 
         <button type="submit" class="btn-primary">¡Haz Una Prueba!</button>
 
-        <!-- Usando la clase personalizada para asegurar la alineación y tamaño del botón -->
+        <!-- Botón Volver a la Página Inicial, con el mismo tamaño -->
         <a href="index.html" class="btn-primary-link">Volver a la Página Inicial</a>
       </form>
     </div>
