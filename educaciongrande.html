@@ -11,6 +11,9 @@
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
     }
     header {
       background-color: #004D92;
@@ -78,6 +81,9 @@
       display: flex;
       flex-direction: column;
       align-items: center; /* Centra todo el contenido dentro del formulario */
+      flex-grow: 1; /* Hace que el formulario crezca y ocupe el espacio restante */
+      margin-top: auto; /* Empuja el formulario hacia el final */
+      padding-bottom: 20px;
     }
     
     /* Centrar el título */
@@ -86,20 +92,9 @@
       width: 100%; /* Asegura que ocupe todo el ancho disponible */
     }
     
-    /* Asegurarse de que el formulario esté centrado en la página */
-    .form-container {
-      max-width: 500px;
-      margin: 0 auto; /* Centra el contenedor del formulario */
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    
     /* Establecer que el campo de correo electrónico tenga un ancho adecuado */
     .form-container input[type="email"] {
       width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
-      max-width: 100%; /* Previene que el campo se salga del contenedor */
       padding: 12px;
       margin: 10px 0;
       border-radius: 5px;
@@ -117,7 +112,7 @@
     .form-container .checkbox-container {
       display: flex;
       flex-direction: column; /* Alinea el checkbox encima del texto */
-      align-items: center; /* Centra los elementos horizontalmente */
+      align-items: flex-start; /* Alinea los elementos al principio */
     }
     
     .form-container .checkbox-container input {
@@ -176,6 +171,7 @@
       <button type="submit" class="btn-primary">Haz una Prueba</button>
     </form>
   </section>
+  
   <!-- Features Section -->
   <section class="features">
     <h2>Características Principales</h2>
