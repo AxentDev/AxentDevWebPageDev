@@ -186,9 +186,22 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      // Acción para "Volver a la Página Inicial"
       document.getElementById("no-optimization").addEventListener("click", function () {
-        // Acciones para no optimizar la experiencia, por ejemplo, redirigir a una página diferente
         window.location.href = "index.html"; // Redirige a la página de inicio
+      });
+
+      // Acción para "Encuentra mi solución"
+      document.getElementById("find-solution").addEventListener("click", function () {
+        var industry = document.getElementById("industry").value; // Obtener el valor de la industria seleccionada
+
+        if (industry === "educacion") {
+          // Si la industria seleccionada es "Educación", redirigir a educaciongrande.html
+          window.location.href = "educaciongrande.html";
+        } else {
+          // En caso contrario, puedes añadir más redirecciones o lógica
+          alert("Selecciona la opción de industria adecuada.");
+        }
       });
     });
   </script>
