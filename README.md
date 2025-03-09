@@ -1,41 +1,46 @@
-AxentDev Landing Pages
+# 🌐 AxentDev Landing Pages
 
-Introducción
+## 📌 Introducción
 
-Bienvenido al repositorio de AxentDev Landing Pages. Este proyecto contiene una serie de páginas web diseñadas para distintas industrias, con el objetivo de ofrecer soluciones tecnológicas innovadoras y adaptadas a cada sector. Cada página proporciona información clave sobre los servicios, características y beneficios ofrecidos, así como un formulario para capturar clientes potenciales.
+Bienvenido al repositorio de **AxentDev Landing Pages**.  
+Este proyecto incluye una serie de páginas web diseñadas para distintas industrias, ofreciendo soluciones tecnológicas innovadoras y adaptadas a cada sector.  
 
-Tecnologías Utilizadas
+Cada página proporciona:  
+✅ Información clave sobre los servicios y características.  
+✅ Beneficios específicos para cada industria.  
+✅ Un formulario para capturar clientes potenciales.  
 
-El desarrollo de estas páginas se basa en:
+---
 
-HTML5: Para la estructura del contenido.
+## 🛠️ Tecnologías Utilizadas
 
-CSS3: Para el diseño y estilos responsivos.
+Este proyecto ha sido desarrollado con:
 
-JavaScript (opcional): Para interactividad adicional.
+- **HTML5** → Estructura del contenido.  
+- **CSS3** → Diseño y estilos responsivos.  
+- **JavaScript (opcional)** → Interactividad adicional.  
+- **Font Awesome** → Iconos atractivos.  
+- **Google Fonts** → Mejora de la tipografía.  
 
-Font Awesome: Para el uso de iconos.
+---
 
-Google Fonts: Para mejorar la tipografía.
+## 📄 Páginas Disponibles
 
-Páginas Disponibles
+Cada archivo HTML corresponde a una industria específica:
 
-Cada archivo HTML en el repositorio corresponde a una industria específica:
+- 🛒 **[Ventas/Comercio Online](ventas_comercio.html)**
+- 💻 **[Software y Servicios Tecnológicos](software_tecnologia.html)**
+- 📡 **[Telecomunicaciones](telecomunicaciones.html)**
+- 🚛 **[Transporte](transporte.html)**
+- 🌍 **[Otros Sectores](otros_sectores.html)**
 
-Ventas/Comercio Online (ventas_comercio.html)
+Cada página sigue una estructura similar, con textos y características adaptadas a su industria.
 
-Software y Servicios Tecnológicos (software_tecnologia.html)
+---
 
-Telecomunicaciones (telecomunicaciones.html)
+## 📁 Estructura del Proyecto
 
-Transporte (transporte.html)
-
-Otros Sectores de la Industria (otros_sectores.html)
-
-Cada una de estas páginas sigue una estructura similar, adaptando los textos y características a la industria correspondiente.
-
-Estructura del Proyecto
-
+```bash
 AxentDev-Landing-Pages/
 │-- images/               # Carpeta de imágenes
 │-- css/                  # Archivos de estilos (si aplica)
@@ -48,26 +53,3 @@ AxentDev-Landing-Pages/
 │-- index.html           # Página principal o enlace a las demás
 │-- README.md            # Documentación del proyecto
 
-Instalación y Uso
-
-Para visualizar y modificar el proyecto en local:
-
-Clona el repositorio:
-
-git clone https://github.com/tu-usuario/axentdev-landing-pages.git
-
-Abre los archivos HTML en tu navegador.
-
-Contribución
-
-Si deseas contribuir al proyecto, puedes:
-
-Hacer un fork del repositorio.
-
-Crear una nueva rama para tus cambios.
-
-Enviar un pull request con mejoras.
-
-Licencia
-
-Este proyecto está bajo la licencia MIT. Puedes usarlo y modificarlo libremente según los términos de la licencia.
