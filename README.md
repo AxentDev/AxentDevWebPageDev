@@ -53,3 +53,28 @@ AxentDev-Landing-Pages/
 │-- index.html           # Página principal o enlace a las demás
 │-- README.md            # Documentación del proyecto
 
+
+🚀 Instalación y Uso
+Para visualizar y modificar el proyecto en local:
+
+1️⃣ Clona el repositorio:
+
+bash
+Copiar
+Editar
+git clone https://github.com/tu-usuario/axentdev-landing-pages.git
+2️⃣ Abre los archivos HTML en tu navegador.
+
+🤝 Contribución
+Si deseas contribuir al proyecto, sigue estos pasos:
+
+Haz un fork del repositorio.
+Crea una nueva rama para tus cambios.
+Realiza tus modificaciones y haz un commit.
+Envía un pull request con tus mejoras.
+📜 Licencia
+Este proyecto está bajo la licencia MIT.
+Puedes usarlo y modificarlo libremente según los términos de la licencia.
+
+🔗 ¡Gracias por visitar este proyecto!
+💡 AxentDev – Creando experiencias digitales para todas las industrias.
