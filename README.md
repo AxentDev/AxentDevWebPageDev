@@ -1,8 +1,8 @@
-# AxentDev Landing Pages
+# AxentDev Backend Development - Alejandro De Mendoza
 
 ## 📌 Introducción
 
-Bienvenido al repositorio de **AxentDev Landing Pages**. Este proyecto contiene una serie de páginas web diseñadas para distintas industrias, con el objetivo de ofrecer soluciones tecnológicas innovadoras y adaptadas a cada sector. Cada página proporciona información clave sobre los servicios, características y beneficios ofrecidos, así como un formulario para capturar clientes potenciales.
+Bienvenido al repositorio de **AxentDev Web Page**. Este proyecto contiene una serie de páginas web diseñadas para distintas industrias, con el objetivo de ofrecer soluciones tecnológicas innovadoras y adaptadas a cada sector. Cada página proporciona información clave sobre los servicios, características y beneficios ofrecidos, así como un formulario para capturar clientes potenciales.
 
 ## 🚀 Tecnologías Utilizadas
 
